@@ -1,25 +1,36 @@
-14:41:34 **** Incremental Build of configuration Debug for project Exam-2022WiSe ****
+17:00:23 **** Rebuild of configuration Debug for project Exam-2022WiSe ****
 Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\Account.o" "..\\myCode\\Account.cpp" 
 g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-g++ -o Exam-2022WiSe "myCode\\Account.o" "myCode\\Bank.o" "myCode\\CDAccount.o" "myCode\\CurrentAccount.o" "myCode\\Customer.o" "myCode\\SavingsAccount.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: myCode\tests.o: in function `setupBank(Bank&)':
-C:\Sandbox\Restart\APT\Old Exams-20240117\2022WiSe-APT-1-Project\Exam-2022WiSe\Debug/../myCode/tests.cpp:39:(.text+0x6e): undefined reference to `Bank::createCustomer()'
-C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Sandbox\Restart\APT\Old Exams-20240117\2022WiSe-APT-1-Project\Exam-2022WiSe\Debug/../myCode/tests.cpp:39:(.text+0xfd): undefined reference to `Customer::setPersonalData(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Poco::Data::Date)'
-C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Sandbox\Restart\APT\Old Exams-20240117\2022WiSe-APT-1-Project\Exam-2022WiSe\Debug/../myCode/tests.cpp:40:(.text+0x15a): undefined reference to `Customer::createAccount(Bank::AccountType)'
-C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Sandbox\Restart\APT\Old Exams-20240117\2022WiSe-APT-1-Project\Exam-2022WiSe\Debug/../myCode/tests.cpp:40:(.text+0x16a): undefined reference to `Account::transact(float)'
-C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Sandbox\Restart\APT\Old Exams-20240117\2022WiSe-APT-1-Project\Exam-2022WiSe\Debug/../myCode/tests.cpp:41:(.text+0x17e): undefined reference to `Customer::createAccount(Bank::AccountType)'
-C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Sandbox\Restart\APT\Old Exams-20240117\2022WiSe-APT-1-Project\Exam-2022WiSe\Debug/../myCode/tests.cpp:41:(.text+0x18e): undefined reference to `Account::transact(float)'
-C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Sandbox\Restart\APT\Old Exams-20240117\2022WiSe-APT-1-Project\Exam-2022WiSe\Debug/../myCode/tests.cpp:42:(.text+0x1a2): undefined reference to `Customer::createAccount(Bank::AccountType)'
-C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Sandbox\Restart\APT\Old Exams-20240117\2022WiSe-APT-1-Project\Exam-2022WiSe\Debug/../myCode/tests.cpp:42:(.text+0x1b2): undefined reference to `Account::transact(float)'
-C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Sandbox\Restart\APT\Old Exams-20240117\2022WiSe-APT-1-Project\Exam-2022WiSe\Debug/../myCode/tests.cpp:43:(.text+0x1c6): undefined reference to `Customer::createAccount(Bank::AccountType)'
-C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Sandbox\Restart\APT\Old Exams-20240117\2022WiSe-APT-1-Project\Exam-2022WiSe\Debug/../myCode/tests.cpp:43:(.text+0x1d6): undefined reference to `Account::transact(float)'
-C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Sandbox\Restart\APT\Old Exams-20240117\2022WiSe-APT-1-Project\Exam-2022WiSe\Debug/../myCode/tests.cpp:44:(.text+0x1ea): undefined reference to `Customer::createAccount(Bank::AccountType)'
-C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Sandbox\Restart\APT\Old Exams-20240117\2022WiSe-APT-1-Project\Exam-2022WiSe\Debug/../myCode/tests.cpp:44:(.text+0x1fa): undefined reference to `Account::transact(float)'
-C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Sandbox\Restart\APT\Old Exams-20240117\2022WiSe-APT-1-Project\Exam-2022WiSe\Debug/../myCode/tests.cpp:46:(.text+0x209): undefined reference to `Bank::createCustomer()'
-C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Sandbox\Restart\APT\Old Exams-20240117\2022WiSe-APT-1-Project\Exam-2022WiSe\Debug/../myCode/tests.cpp:46:(.text+0x298): undefined reference to `Customer::setPersonalData(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Poco::Data::Date)'
-C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Sandbox\Restart\APT\Old Exams-20240117\2022WiSe-APT-1-Project\Exam-2022WiSe\Debug/../myCode/tests.cpp:48:(.text+0x2e9): undefined reference to `Bank::createCustomer()'
-C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Sandbox\Restart\APT\Old Exams-20240117\2022WiSe-APT-1-Project\Exam-2022WiSe\Debug/../myCode/tests.cpp:48:(.text+0x38a): undefined reference to `Customer::setPersonalData(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Poco::Data::Date)'
-collect2.exe: error: ld returned 1 exit status
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\Customer.o" "..\\myCode\\Customer.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\SavingsAccount.o" "..\\myCode\\SavingsAccount.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\main.o" "..\\myCode\\main.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\CurrentAccount.o" "..\\myCode\\CurrentAccount.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\Bank.o" "..\\myCode\\Bank.cpp" 
+..\myCode\Bank.cpp: In member function 'Customer* Bank::createCustomer()':
+..\myCode\Bank.cpp:5:1: warning: no return statement in function returning non-void [-Wreturn-type]
+    5 | }
+      | ^
+..\myCode\Bank.cpp: At global scope:
+..\myCode\Bank.cpp:7:44: error: 'id' has incomplete type
+    7 | Customer* Bank::lookupCustomer(std::string id) const {
+      |                                ~~~~~~~~~~~~^~
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/iosfwd:41,
+                 from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/shared_ptr.h:52,
+                 from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/memory:80,
+                 from ..\myCode\Bank.h:11,
+                 from ..\myCode\Bank.cpp:1:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stringfwd.h:72:11: note: declaration of 'std::string' {aka 'class std::__cxx11::basic_string<char>'}
+   72 |     class basic_string;
+      |           ^~~~~~~~~~~~
+..\myCode\Bank.cpp: In member function 'Customer* Bank::lookupCustomer(std::string) const':
+..\myCode\Bank.cpp:8:1: warning: no return statement in function returning non-void [-Wreturn-type]
+    8 | }
+      | ^
+..\myCode\Bank.cpp: In member function 'std::vector<Customer*> Bank::allCustomers() const':
+..\myCode\Bank.cpp:11:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   11 | }
+      | ^
 
-14:41:37 Build Failed. 16 errors, 0 warnings. (took 3s.7ms)
+17:00:41 Build Failed. 1 errors, 3 warnings. (took 17s.980ms)
 

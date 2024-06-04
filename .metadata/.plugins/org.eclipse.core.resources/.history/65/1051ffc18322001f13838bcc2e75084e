@@ -1,0 +1,66 @@
+/*
+ * Ship.cpp
+ *
+ *  Created on: 04-Jun-2024
+ *      Author: acer
+ */
+
+#include "Ship.h"
+
+Ship::Ship(const GridPosition &bow, const GridPosition &stern)
+{
+}
+
+bool Ship::isValid() const
+{
+	if(length() <=5 && length() >= 2){
+		if(getBow().row == getStern().row || getBow().column == getStern().column)return true;
+	}
+	return false;
+
+}
+
+GridPosition Ship::getBow() const
+{
+	return bow;
+}
+
+GridPosition Ship::getStern() const
+{
+	return stern;
+}
+
+int Ship::length() const
+{
+	if(getBow().row == getStern().row)
+	{
+		return(getStern().column - getBow().column);
+	}
+	else if(getBow().column == getStern().column)
+	{
+		return(getStern().row - getBow().row);
+	}
+	return 0;
+}
+
+const std::set<GridPosition> Ship::occupiedArea() const
+{
+	if(isValid()){
+		if(getBow().row == getStern().row)
+			{
+				for(int i=0;i< length();i++){
+
+				}
+			}
+
+	}
+}
+
+const std::set<GridPosition> Ship::blockedArea() const
+{
+}
+
+Ship::~Ship()
+{
+}
+

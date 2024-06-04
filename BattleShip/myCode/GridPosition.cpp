@@ -6,16 +6,31 @@
  */
 
 #include "GridPosition.h"
-
-
+#include <sstream>
+#include <string>
+#include <sstream>
+using namespace std;
 GridPosition::GridPosition(char row, int column): row{0}, column{0}
 {
 }
 
 GridPosition::GridPosition(std::string position)
 {
-	row = position[0];
-	column =
+	string strCol;
+	for(auto itr= position.begin(); itr!= position.end();itr++){
+		if(*itr >= 'A' && *itr <= 'Z'){
+			row = *itr;
+			cout<< "Row: "<<row <<endl;
+		}
+		else if(isdigit(*itr))
+		{
+			strCol += *itr;
+
+		}
+	}
+	istringstream(strCol) >>column;
+	cout<< "Col: "<<  column<<endl;
+
 }
 
 bool GridPosition::isValid() const
@@ -38,7 +53,8 @@ int GridPosition::getColumn() const
 
 GridPosition::operator std::string() const
 {
-
+	std::string concatOp;
+	return (row+ std::to_string(column));
 }
 
 bool GridPosition::operator ==(GridPosition other) const

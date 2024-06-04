@@ -1,0 +1,18 @@
+/*
+ * Board.h
+ *
+ *  Created on: 04-Jun-2024
+ *      Author: acer
+ */
+
+#ifndef BOARD_H_
+#define BOARD_H_
+
+class Board
+{
+public:
+	Board();
+	virtual ~Board();
+};
+
+#endif /* BOARD_H_ */

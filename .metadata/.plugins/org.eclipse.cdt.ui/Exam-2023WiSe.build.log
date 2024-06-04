@@ -1,0 +1,18 @@
+17:00:41 **** Rebuild of configuration Debug for project Exam-2023WiSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Werror=return-type -o myCode\main.o ..\myCode\main.cpp 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Werror=return-type -o myCode\Item.o ..\myCode\Item.cpp 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Werror=return-type -o myCode\Product.o ..\myCode\Product.cpp 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Werror=return-type -o myCode\tests.o ..\myCode\tests.cpp 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Werror=return-type -o myCode\Discount.o ..\myCode\Discount.cpp 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Werror=return-type -o myCode\FixedDiscount.o ..\myCode\FixedDiscount.cpp 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Werror=return-type -o myCode\ShopDb.o ..\myCode\ShopDb.cpp 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Werror=return-type -o myCode\QuantityDiscount.o ..\myCode\QuantityDiscount.cpp 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Werror=return-type -o myCode\ShoppingList.o ..\myCode\ShoppingList.cpp 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Werror=return-type -o myCode\NoDiscount.o ..\myCode\NoDiscount.cpp 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Werror=return-type -o myCode\Shop.o ..\myCode\Shop.cpp 
+g++ -o Exam-2023WiSe myCode\Discount.o myCode\FixedDiscount.o myCode\Item.o myCode\NoDiscount.o myCode\Product.o myCode\QuantityDiscount.o myCode\Shop.o myCode\ShopDb.o myCode\ShoppingList.o myCode\main.o myCode\tests.o 
+Info: Parallel threads used: 7
+
+17:00:43 Build Finished. 0 errors, 0 warnings. (took 1s.658ms)
+
