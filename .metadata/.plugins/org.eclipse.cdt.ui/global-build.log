@@ -1,0 +1,5 @@
+17:54:56 **** Rebuild of configuration Debug for project Task1 ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\main.o" "..\\myCode\\main.cpp" 
+g++ -o Task1.exe "myCode\\main.o" 
+Info: Nothing to build for Task1

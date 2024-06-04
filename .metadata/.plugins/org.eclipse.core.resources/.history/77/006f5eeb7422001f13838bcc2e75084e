@@ -1,0 +1,54 @@
+/*
+ * GridPosition.cpp
+ *
+ *  Created on: 04-Jun-2024
+ *      Author: acer
+ */
+
+#include "GridPosition.h"
+
+
+GridPosition::GridPosition(char row, int column): row{0}, column{0}
+{
+}
+
+GridPosition::GridPosition(std::string position)
+{
+}
+
+bool GridPosition::isValid() const
+{
+}
+
+char GridPosition::getRow() const
+{
+	return row;
+}
+
+int GridPosition::getColumn() const
+{
+	return column;
+}
+
+GridPosition::operator std::string() const
+{
+
+}
+
+bool GridPosition::operator ==() const
+{
+	return true;
+}
+
+bool GridPosition::operator <() const
+{
+
+	return true;
+
+}
+
+GridPosition::~GridPosition()
+{
+	// TODO Auto-generated destructor stub
+}
+
