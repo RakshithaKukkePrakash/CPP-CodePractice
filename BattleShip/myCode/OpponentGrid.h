@@ -12,7 +12,7 @@ class OpponentGrid
 {
 	int rows;
 	int columns;
-	Ship sunkenShips;
+//	Ship sunkenShips;
 public:
 	OpponentGrid(int rows, int columns);
 	int getRows() const;

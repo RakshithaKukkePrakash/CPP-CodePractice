@@ -1,491 +1,435 @@
-17:02:08 **** Incremental Build of configuration Debug for project BattleShip ****
+16:34:30 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
 Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Ship.o" "..\\myCode\\Ship.cpp" 
-..\myCode\Ship.cpp: In constructor 'Ship::Ship(const GridPosition&, const GridPosition&)':
-..\myCode\Ship.cpp:10:62: error: no matching function for call to 'GridPosition::GridPosition()'
-   10 | Ship::Ship(const GridPosition &bow, const GridPosition &stern)
-      |                                                              ^
-In file included from ..\myCode\Ship.h:12,
-                 from ..\myCode\Ship.cpp:8:
-..\myCode\GridPosition.h:20:9: note: candidate: 'GridPosition::GridPosition(std::string)'
-   20 |         GridPosition(std::string position);
-      |         ^~~~~~~~~~~~
-..\myCode\GridPosition.h:20:9: note:   candidate expects 1 argument, 0 provided
-..\myCode\GridPosition.h:19:9: note: candidate: 'GridPosition::GridPosition(char, int)'
-   19 |         GridPosition(char row, int column);
-      |         ^~~~~~~~~~~~
-..\myCode\GridPosition.h:19:9: note:   candidate expects 2 arguments, 0 provided
-..\myCode\GridPosition.h:14:7: note: candidate: 'constexpr GridPosition::GridPosition(const GridPosition&)'
-   14 | class GridPosition
-      |       ^~~~~~~~~~~~
-..\myCode\GridPosition.h:14:7: note:   candidate expects 1 argument, 0 provided
-..\myCode\Ship.cpp:10:62: error: no matching function for call to 'GridPosition::GridPosition()'
-   10 | Ship::Ship(const GridPosition &bow, const GridPosition &stern)
-      |                                                              ^
-..\myCode\GridPosition.h:20:9: note: candidate: 'GridPosition::GridPosition(std::string)'
-   20 |         GridPosition(std::string position);
-      |         ^~~~~~~~~~~~
-..\myCode\GridPosition.h:20:9: note:   candidate expects 1 argument, 0 provided
-..\myCode\GridPosition.h:19:9: note: candidate: 'GridPosition::GridPosition(char, int)'
-   19 |         GridPosition(char row, int column);
-      |         ^~~~~~~~~~~~
-..\myCode\GridPosition.h:19:9: note:   candidate expects 2 arguments, 0 provided
-..\myCode\GridPosition.h:14:7: note: candidate: 'constexpr GridPosition::GridPosition(const GridPosition&)'
-   14 | class GridPosition
-      |       ^~~~~~~~~~~~
-..\myCode\GridPosition.h:14:7: note:   candidate expects 1 argument, 0 provided
-..\myCode\Ship.cpp: In member function 'bool Ship::isValid() const':
-..\myCode\Ship.cpp:16:28: error: invalid use of member 'int Ship::length() const' (did you forget the '&' ?)
-   16 |         if(length() <=5 && length >= 2){
-      |                            ^~~~~~
-..\myCode\Ship.cpp:17:29: error: 'char GridPosition::row' is private within this context
-   17 |                 if(getBow().row == getStern().row || getBow().column == getStern().column)return true;
-      |                             ^~~
-..\myCode\GridPosition.h:16:14: note: declared private here
-   16 |         char row;
-      |              ^~~
-..\myCode\Ship.cpp:17:47: error: 'char GridPosition::row' is private within this context
-   17 |                 if(getBow().row == getStern().row || getBow().column == getStern().column)return true;
-      |                                               ^~~
-..\myCode\GridPosition.h:16:14: note: declared private here
-   16 |         char row;
-      |              ^~~
-..\myCode\Ship.cpp:17:63: error: 'int GridPosition::column' is private within this context
-   17 |                 if(getBow().row == getStern().row || getBow().column == getStern().column)return true;
-      |                                                               ^~~~~~
-..\myCode\GridPosition.h:17:13: note: declared private here
-   17 |         int column;
-      |             ^~~~~~
-..\myCode\Ship.cpp:17:84: error: 'int GridPosition::column' is private within this context
-   17 |                 if(getBow().row == getStern().row || getBow().column == getStern().column)return true;
-      |                                                                                    ^~~~~~
-..\myCode\GridPosition.h:17:13: note: declared private here
-   17 |         int column;
-      |             ^~~~~~
-..\myCode\Ship.cpp: In member function 'int Ship::length() const':
-..\myCode\Ship.cpp:35:21: error: 'char GridPosition::row' is private within this context
-   35 |         if(getBow().row == getStern().row)
-      |                     ^~~
-..\myCode\GridPosition.h:16:14: note: declared private here
-   16 |         char row;
-      |              ^~~
-..\myCode\Ship.cpp:35:39: error: 'char GridPosition::row' is private within this context
-   35 |         if(getBow().row == getStern().row)
-      |                                       ^~~
-..\myCode\GridPosition.h:16:14: note: declared private here
-   16 |         char row;
-      |              ^~~
-..\myCode\Ship.cpp:37:35: error: 'int GridPosition::column' is private within this context
-   37 |                 return(getStern().column - getBow().column);
-      |                                   ^~~~~~
-..\myCode\GridPosition.h:17:13: note: declared private here
-   17 |         int column;
-      |             ^~~~~~
-..\myCode\Ship.cpp:37:53: error: 'int GridPosition::column' is private within this context
-   37 |                 return(getStern().column - getBow().column);
-      |                                                     ^~~~~~
-..\myCode\GridPosition.h:17:13: note: declared private here
-   17 |         int column;
-      |             ^~~~~~
-..\myCode\Ship.cpp:39:26: error: 'int GridPosition::column' is private within this context
-   39 |         else if(getBow().column == getStern().column)
-      |                          ^~~~~~
-..\myCode\GridPosition.h:17:13: note: declared private here
-   17 |         int column;
-      |             ^~~~~~
-..\myCode\Ship.cpp:39:47: error: 'int GridPosition::column' is private within this context
-   39 |         else if(getBow().column == getStern().column)
-      |                                               ^~~~~~
-..\myCode\GridPosition.h:17:13: note: declared private here
-   17 |         int column;
-      |             ^~~~~~
-..\myCode\Ship.cpp:41:35: error: 'char GridPosition::row' is private within this context
-   41 |                 return(getStern().row - getBow().row);
-      |                                   ^~~
-..\myCode\GridPosition.h:16:14: note: declared private here
-   16 |         char row;
-      |              ^~~
-..\myCode\Ship.cpp:41:50: error: 'char GridPosition::row' is private within this context
-   41 |                 return(getStern().row - getBow().row);
-      |                                                  ^~~
-..\myCode\GridPosition.h:16:14: note: declared private here
-   16 |         char row;
-      |              ^~~
-..\myCode\Ship.cpp: In member function 'const std::set<GridPosition> Ship::occupiedArea() const':
-..\myCode\Ship.cpp:49:29: error: 'char GridPosition::row' is private within this context
-   49 |                 if(getBow().row == getStern().row)
-      |                             ^~~
-..\myCode\GridPosition.h:16:14: note: declared private here
-   16 |         char row;
-      |              ^~~
-..\myCode\Ship.cpp:49:47: error: 'char GridPosition::row' is private within this context
-   49 |                 if(getBow().row == getStern().row)
-      |                                               ^~~
-..\myCode\GridPosition.h:16:14: note: declared private here
-   16 |         char row;
-      |              ^~~
-..\myCode\Ship.cpp:57:1: error: no return statement in function returning non-void [-Werror=return-type]
-   57 | }
-      | ^
-..\myCode\Ship.cpp: In member function 'const std::set<GridPosition> Ship::blockedArea() const':
-..\myCode\Ship.cpp:61:1: error: no return statement in function returning non-void [-Werror=return-type]
-   61 | }
-      | ^
-cc1plus.exe: some warnings being treated as errors
-17:03:12 **** Incremental Build of configuration Debug for project BattleShip ****
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+..\myCode\tests.cpp: In function 'void adjusterTests()':
+..\myCode\tests.cpp:41:20: warning: comparison of integer expressions of different signedness: 'int' and 'long long unsigned int' [-Wsign-compare]
+   41 |     for(int i = 0;i< sizeof(testValues[0])/ sizeof(testValues); i++)
+      |                   ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\myCode\tests.cpp:63:11: warning: unused variable 'expected' [-Wunused-variable]
+   63 |     float expected[] = { -11, -1.1, 0, 0.9, 9 };
+      |           ^~~~~~~~
+..\myCode\tests.cpp: In function 'void sensorTests()':
+..\myCode\tests.cpp:76:11: warning: unused variable 'testValues' [-Wunused-variable]
+   76 |     float testValues[] = { -10, -1, 0, 1, 10 };
+      |           ^~~~~~~~~~
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+Info: Nothing to build for Exam-2023SoSe
+16:34:48 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
 Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Ship.o" "..\\myCode\\Ship.cpp" 
-..\myCode\Ship.cpp: In constructor 'Ship::Ship(const GridPosition&, const GridPosition&)':
-..\myCode\Ship.cpp:10:62: error: no matching function for call to 'GridPosition::GridPosition()'
-   10 | Ship::Ship(const GridPosition &bow, const GridPosition &stern)
-      |                                                              ^
-In file included from ..\myCode\Ship.h:12,
-                 from ..\myCode\Ship.cpp:8:
-..\myCode\GridPosition.h:20:9: note: candidate: 'GridPosition::GridPosition(std::string)'
-   20 |         GridPosition(std::string position);
-      |         ^~~~~~~~~~~~
-..\myCode\GridPosition.h:20:9: note:   candidate expects 1 argument, 0 provided
-..\myCode\GridPosition.h:19:9: note: candidate: 'GridPosition::GridPosition(char, int)'
-   19 |         GridPosition(char row, int column);
-      |         ^~~~~~~~~~~~
-..\myCode\GridPosition.h:19:9: note:   candidate expects 2 arguments, 0 provided
-..\myCode\GridPosition.h:14:7: note: candidate: 'constexpr GridPosition::GridPosition(const GridPosition&)'
-   14 | class GridPosition
-      |       ^~~~~~~~~~~~
-..\myCode\GridPosition.h:14:7: note:   candidate expects 1 argument, 0 provided
-..\myCode\Ship.cpp:10:62: error: no matching function for call to 'GridPosition::GridPosition()'
-   10 | Ship::Ship(const GridPosition &bow, const GridPosition &stern)
-      |                                                              ^
-..\myCode\GridPosition.h:20:9: note: candidate: 'GridPosition::GridPosition(std::string)'
-   20 |         GridPosition(std::string position);
-      |         ^~~~~~~~~~~~
-..\myCode\GridPosition.h:20:9: note:   candidate expects 1 argument, 0 provided
-..\myCode\GridPosition.h:19:9: note: candidate: 'GridPosition::GridPosition(char, int)'
-   19 |         GridPosition(char row, int column);
-      |         ^~~~~~~~~~~~
-..\myCode\GridPosition.h:19:9: note:   candidate expects 2 arguments, 0 provided
-..\myCode\GridPosition.h:14:7: note: candidate: 'constexpr GridPosition::GridPosition(const GridPosition&)'
-   14 | class GridPosition
-      |       ^~~~~~~~~~~~
-..\myCode\GridPosition.h:14:7: note:   candidate expects 1 argument, 0 provided
-..\myCode\Ship.cpp: In member function 'bool Ship::isValid() const':
-..\myCode\Ship.cpp:17:29: error: 'char GridPosition::row' is private within this context
-   17 |                 if(getBow().row == getStern().row || getBow().column == getStern().column)return true;
-      |                             ^~~
-..\myCode\GridPosition.h:16:14: note: declared private here
-   16 |         char row;
-      |              ^~~
-..\myCode\Ship.cpp:17:47: error: 'char GridPosition::row' is private within this context
-   17 |                 if(getBow().row == getStern().row || getBow().column == getStern().column)return true;
-      |                                               ^~~
-..\myCode\GridPosition.h:16:14: note: declared private here
-   16 |         char row;
-      |              ^~~
-..\myCode\Ship.cpp:17:63: error: 'int GridPosition::column' is private within this context
-   17 |                 if(getBow().row == getStern().row || getBow().column == getStern().column)return true;
-      |                                                               ^~~~~~
-..\myCode\GridPosition.h:17:13: note: declared private here
-   17 |         int column;
-      |             ^~~~~~
-..\myCode\Ship.cpp:17:84: error: 'int GridPosition::column' is private within this context
-   17 |                 if(getBow().row == getStern().row || getBow().column == getStern().column)return true;
-      |                                                                                    ^~~~~~
-..\myCode\GridPosition.h:17:13: note: declared private here
-   17 |         int column;
-      |             ^~~~~~
-..\myCode\Ship.cpp: In member function 'int Ship::length() const':
-..\myCode\Ship.cpp:35:21: error: 'char GridPosition::row' is private within this context
-   35 |         if(getBow().row == getStern().row)
-      |                     ^~~
-..\myCode\GridPosition.h:16:14: note: declared private here
-   16 |         char row;
-      |              ^~~
-..\myCode\Ship.cpp:35:39: error: 'char GridPosition::row' is private within this context
-   35 |         if(getBow().row == getStern().row)
-      |                                       ^~~
-..\myCode\GridPosition.h:16:14: note: declared private here
-   16 |         char row;
-      |              ^~~
-..\myCode\Ship.cpp:37:35: error: 'int GridPosition::column' is private within this context
-   37 |                 return(getStern().column - getBow().column);
-      |                                   ^~~~~~
-..\myCode\GridPosition.h:17:13: note: declared private here
-   17 |         int column;
-      |             ^~~~~~
-..\myCode\Ship.cpp:37:53: error: 'int GridPosition::column' is private within this context
-   37 |                 return(getStern().column - getBow().column);
-      |                                                     ^~~~~~
-..\myCode\GridPosition.h:17:13: note: declared private here
-   17 |         int column;
-      |             ^~~~~~
-..\myCode\Ship.cpp:39:26: error: 'int GridPosition::column' is private within this context
-   39 |         else if(getBow().column == getStern().column)
-      |                          ^~~~~~
-..\myCode\GridPosition.h:17:13: note: declared private here
-   17 |         int column;
-      |             ^~~~~~
-..\myCode\Ship.cpp:39:47: error: 'int GridPosition::column' is private within this context
-   39 |         else if(getBow().column == getStern().column)
-      |                                               ^~~~~~
-..\myCode\GridPosition.h:17:13: note: declared private here
-   17 |         int column;
-      |             ^~~~~~
-..\myCode\Ship.cpp:41:35: error: 'char GridPosition::row' is private within this context
-   41 |                 return(getStern().row - getBow().row);
-      |                                   ^~~
-..\myCode\GridPosition.h:16:14: note: declared private here
-   16 |         char row;
-      |              ^~~
-..\myCode\Ship.cpp:41:50: error: 'char GridPosition::row' is private within this context
-   41 |                 return(getStern().row - getBow().row);
-      |                                                  ^~~
-..\myCode\GridPosition.h:16:14: note: declared private here
-   16 |         char row;
-      |              ^~~
-..\myCode\Ship.cpp: In member function 'const std::set<GridPosition> Ship::occupiedArea() const':
-..\myCode\Ship.cpp:49:29: error: 'char GridPosition::row' is private within this context
-   49 |                 if(getBow().row == getStern().row)
-      |                             ^~~
-..\myCode\GridPosition.h:16:14: note: declared private here
-   16 |         char row;
-      |              ^~~
-..\myCode\Ship.cpp:49:47: error: 'char GridPosition::row' is private within this context
-   49 |                 if(getBow().row == getStern().row)
-      |                                               ^~~
-..\myCode\GridPosition.h:16:14: note: declared private here
-   16 |         char row;
-      |              ^~~
-..\myCode\Ship.cpp:57:1: error: no return statement in function returning non-void [-Werror=return-type]
-   57 | }
-      | ^
-..\myCode\Ship.cpp: In member function 'const std::set<GridPosition> Ship::blockedArea() const':
-..\myCode\Ship.cpp:61:1: error: no return statement in function returning non-void [-Werror=return-type]
-   61 | }
-      | ^
-cc1plus.exe: some warnings being treated as errors
-17:04:36 **** Incremental Build of configuration Debug for project BattleShip ****
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+..\myCode\tests.cpp: In function 'void adjusterTests()':
+..\myCode\tests.cpp:41:20: warning: comparison of integer expressions of different signedness: 'int' and 'long long unsigned int' [-Wsign-compare]
+   41 |     for(int i = 0;i< sizeof(testValues[0])/ sizeof(testValues); i++)
+      |                   ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\myCode\tests.cpp:63:11: warning: unused variable 'expected' [-Wunused-variable]
+   63 |     float expected[] = { -11, -1.1, 0, 0.9, 9 };
+      |           ^~~~~~~~
+..\myCode\tests.cpp: In function 'void sensorTests()':
+..\myCode\tests.cpp:76:11: warning: unused variable 'testValues' [-Wunused-variable]
+   76 |     float testValues[] = { -10, -1, 0, 1, 10 };
+      |           ^~~~~~~~~~
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+16:35:24 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
 Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Ship.o" "..\\myCode\\Ship.cpp" 
-..\myCode\Ship.cpp: In constructor 'Ship::Ship(const GridPosition&, const GridPosition&)':
-..\myCode\Ship.cpp:10:62: error: no matching function for call to 'GridPosition::GridPosition()'
-   10 | Ship::Ship(const GridPosition &bow, const GridPosition &stern)
-      |                                                              ^
-In file included from ..\myCode\Ship.h:12,
-                 from ..\myCode\Ship.cpp:8:
-..\myCode\GridPosition.h:20:9: note: candidate: 'GridPosition::GridPosition(std::string)'
-   20 |         GridPosition(std::string position);
-      |         ^~~~~~~~~~~~
-..\myCode\GridPosition.h:20:9: note:   candidate expects 1 argument, 0 provided
-..\myCode\GridPosition.h:19:9: note: candidate: 'GridPosition::GridPosition(char, int)'
-   19 |         GridPosition(char row, int column);
-      |         ^~~~~~~~~~~~
-..\myCode\GridPosition.h:19:9: note:   candidate expects 2 arguments, 0 provided
-..\myCode\GridPosition.h:14:7: note: candidate: 'constexpr GridPosition::GridPosition(const GridPosition&)'
-   14 | class GridPosition
-      |       ^~~~~~~~~~~~
-..\myCode\GridPosition.h:14:7: note:   candidate expects 1 argument, 0 provided
-..\myCode\Ship.cpp:10:62: error: no matching function for call to 'GridPosition::GridPosition()'
-   10 | Ship::Ship(const GridPosition &bow, const GridPosition &stern)
-      |                                                              ^
-..\myCode\GridPosition.h:20:9: note: candidate: 'GridPosition::GridPosition(std::string)'
-   20 |         GridPosition(std::string position);
-      |         ^~~~~~~~~~~~
-..\myCode\GridPosition.h:20:9: note:   candidate expects 1 argument, 0 provided
-..\myCode\GridPosition.h:19:9: note: candidate: 'GridPosition::GridPosition(char, int)'
-   19 |         GridPosition(char row, int column);
-      |         ^~~~~~~~~~~~
-..\myCode\GridPosition.h:19:9: note:   candidate expects 2 arguments, 0 provided
-..\myCode\GridPosition.h:14:7: note: candidate: 'constexpr GridPosition::GridPosition(const GridPosition&)'
-   14 | class GridPosition
-      |       ^~~~~~~~~~~~
-..\myCode\GridPosition.h:14:7: note:   candidate expects 1 argument, 0 provided
-..\myCode\Ship.cpp: In member function 'const std::set<GridPosition> Ship::occupiedArea() const':
-..\myCode\Ship.cpp:50:29: error: 'char GridPosition::row' is private within this context
-   50 |                 if(getBow().row == getStern().row)
-      |                             ^~~
-..\myCode\GridPosition.h:16:14: note: declared private here
-   16 |         char row;
-      |              ^~~
-..\myCode\Ship.cpp:50:47: error: 'char GridPosition::row' is private within this context
-   50 |                 if(getBow().row == getStern().row)
-      |                                               ^~~
-..\myCode\GridPosition.h:16:14: note: declared private here
-   16 |         char row;
-      |              ^~~
-..\myCode\Ship.cpp:58:1: error: no return statement in function returning non-void [-Werror=return-type]
-   58 | }
-      | ^
-..\myCode\Ship.cpp: In member function 'const std::set<GridPosition> Ship::blockedArea() const':
-..\myCode\Ship.cpp:62:1: error: no return statement in function returning non-void [-Werror=return-type]
-   62 | }
-      | ^
-cc1plus.exe: some warnings being treated as errors
-17:05:06 **** Incremental Build of configuration Debug for project BattleShip ****
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+..\myCode\tests.cpp: In function 'void adjusterTests()':
+..\myCode\tests.cpp:63:11: warning: unused variable 'expected' [-Wunused-variable]
+   63 |     float expected[] = { -11, -1.1, 0, 0.9, 9 };
+      |           ^~~~~~~~
+..\myCode\tests.cpp: In function 'void sensorTests()':
+..\myCode\tests.cpp:76:11: warning: unused variable 'testValues' [-Wunused-variable]
+   76 |     float testValues[] = { -10, -1, 0, 1, 10 };
+      |           ^~~~~~~~~~
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+16:36:45 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
 Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Ship.o" "..\\myCode\\Ship.cpp" 
-..\myCode\Ship.cpp: In constructor 'Ship::Ship(const GridPosition&, const GridPosition&)':
-..\myCode\Ship.cpp:10:62: error: no matching function for call to 'GridPosition::GridPosition()'
-   10 | Ship::Ship(const GridPosition &bow, const GridPosition &stern)
-      |                                                              ^
-In file included from ..\myCode\Ship.h:12,
-                 from ..\myCode\Ship.cpp:8:
-..\myCode\GridPosition.h:20:9: note: candidate: 'GridPosition::GridPosition(std::string)'
-   20 |         GridPosition(std::string position);
-      |         ^~~~~~~~~~~~
-..\myCode\GridPosition.h:20:9: note:   candidate expects 1 argument, 0 provided
-..\myCode\GridPosition.h:19:9: note: candidate: 'GridPosition::GridPosition(char, int)'
-   19 |         GridPosition(char row, int column);
-      |         ^~~~~~~~~~~~
-..\myCode\GridPosition.h:19:9: note:   candidate expects 2 arguments, 0 provided
-..\myCode\GridPosition.h:14:7: note: candidate: 'constexpr GridPosition::GridPosition(const GridPosition&)'
-   14 | class GridPosition
-      |       ^~~~~~~~~~~~
-..\myCode\GridPosition.h:14:7: note:   candidate expects 1 argument, 0 provided
-..\myCode\Ship.cpp:10:62: error: no matching function for call to 'GridPosition::GridPosition()'
-   10 | Ship::Ship(const GridPosition &bow, const GridPosition &stern)
-      |                                                              ^
-..\myCode\GridPosition.h:20:9: note: candidate: 'GridPosition::GridPosition(std::string)'
-   20 |         GridPosition(std::string position);
-      |         ^~~~~~~~~~~~
-..\myCode\GridPosition.h:20:9: note:   candidate expects 1 argument, 0 provided
-..\myCode\GridPosition.h:19:9: note: candidate: 'GridPosition::GridPosition(char, int)'
-   19 |         GridPosition(char row, int column);
-      |         ^~~~~~~~~~~~
-..\myCode\GridPosition.h:19:9: note:   candidate expects 2 arguments, 0 provided
-..\myCode\GridPosition.h:14:7: note: candidate: 'constexpr GridPosition::GridPosition(const GridPosition&)'
-   14 | class GridPosition
-      |       ^~~~~~~~~~~~
-..\myCode\GridPosition.h:14:7: note:   candidate expects 1 argument, 0 provided
-..\myCode\Ship.cpp: In member function 'const std::set<GridPosition> Ship::occupiedArea() const':
-..\myCode\Ship.cpp:58:1: error: no return statement in function returning non-void [-Werror=return-type]
-   58 | }
-      | ^
-..\myCode\Ship.cpp: In member function 'const std::set<GridPosition> Ship::blockedArea() const':
-..\myCode\Ship.cpp:62:1: error: no return statement in function returning non-void [-Werror=return-type]
-   62 | }
-      | ^
-cc1plus.exe: some warnings being treated as errors
-17:11:48 **** Incremental Build of configuration Debug for project BattleShip ****
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+..\myCode\tests.cpp: In function 'void adjusterTests()':
+..\myCode\tests.cpp:64:11: warning: unused variable 'expected' [-Wunused-variable]
+   64 |     float expected[] = { -11, -1.1, 0, 0.9, 9 };
+      |           ^~~~~~~~
+..\myCode\tests.cpp: In function 'void sensorTests()':
+..\myCode\tests.cpp:77:11: warning: unused variable 'testValues' [-Wunused-variable]
+   77 |     float testValues[] = { -10, -1, 0, 1, 10 };
+      |           ^~~~~~~~~~
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+16:37:45 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
 Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Ship.o" "..\\myCode\\Ship.cpp" 
-..\myCode\Ship.cpp: In member function 'const std::set<GridPosition> Ship::blockedArea() const':
-..\myCode\Ship.cpp:70:1: error: no return statement in function returning non-void [-Werror=return-type]
-   70 | }
-      | ^
-cc1plus.exe: some warnings being treated as errors
-17:26:03 **** Incremental Build of configuration Debug for project BattleShip ****
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+..\myCode\tests.cpp: In function 'void adjusterTests()':
+..\myCode\tests.cpp:41:20: warning: comparison of integer expressions of different signedness: 'int' and 'long long unsigned int' [-Wsign-compare]
+   41 |     for(int i = 0;i< sizeof(testValues) / sizeof(testValues[0]); i++)
+      |                   ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\myCode\tests.cpp:64:11: warning: unused variable 'expected' [-Wunused-variable]
+   64 |     float expected[] = { -11, -1.1, 0, 0.9, 9 };
+      |           ^~~~~~~~
+..\myCode\tests.cpp: In function 'void sensorTests()':
+..\myCode\tests.cpp:77:11: warning: unused variable 'testValues' [-Wunused-variable]
+   77 |     float testValues[] = { -10, -1, 0, 1, 10 };
+      |           ^~~~~~~~~~
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+16:37:53 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
 Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\GridPosition.o" "..\\myCode\\GridPosition.cpp" 
-..\myCode\GridPosition.cpp: In member function 'bool GridPosition::isValid() const':
-..\myCode\GridPosition.cpp:31:34: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
-   31 |         if(row<= 'Z' || row>='A' && column>0){
-      |                         ~~~~~~~~~^~~~~~~~~~~
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Ship.o" "..\\myCode\\Ship.cpp" 
-g++ -o BattleShip.exe "myCode\\GridPosition.o" "myCode\\Ship.o" "myCode\\main.o" 
-Info: Nothing to build for BattleShip
-17:26:46 **** Incremental Build of configuration Debug for project BattleShip ****
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+..\myCode\tests.cpp: In function 'void adjusterTests()':
+..\myCode\tests.cpp:41:20: warning: comparison of integer expressions of different signedness: 'int' and 'long long unsigned int' [-Wsign-compare]
+   41 |     for(int i = 0;i< sizeof(testValues) / sizeof(testValues[0]); i++)
+      |                   ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\myCode\tests.cpp:64:11: warning: unused variable 'expected' [-Wunused-variable]
+   64 |     float expected[] = { -11, -1.1, 0, 0.9, 9 };
+      |           ^~~~~~~~
+..\myCode\tests.cpp: In function 'void sensorTests()':
+..\myCode\tests.cpp:77:11: warning: unused variable 'testValues' [-Wunused-variable]
+   77 |     float testValues[] = { -10, -1, 0, 1, 10 };
+      |           ^~~~~~~~~~
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+16:38:00 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
 Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\main.o" "..\\myCode\\main.cpp" 
-g++ -o BattleShip.exe "myCode\\GridPosition.o" "myCode\\Ship.o" "myCode\\main.o" 
-17:28:00 **** Incremental Build of configuration Debug for project BattleShip ****
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+..\myCode\tests.cpp: In function 'void adjusterTests()':
+..\myCode\tests.cpp:41:20: warning: comparison of integer expressions of different signedness: 'int' and 'long long unsigned int' [-Wsign-compare]
+   41 |     for(int i = 0;i< sizeof(testValues) / sizeof(testValues[0]); i++)
+      |                   ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\myCode\tests.cpp:64:11: warning: unused variable 'expected' [-Wunused-variable]
+   64 |     float expected[] = { -11, -1.1, 0, 0.9, 9 };
+      |           ^~~~~~~~
+..\myCode\tests.cpp: In function 'void sensorTests()':
+..\myCode\tests.cpp:77:11: warning: unused variable 'testValues' [-Wunused-variable]
+   77 |     float testValues[] = { -10, -1, 0, 1, 10 };
+      |           ^~~~~~~~~~
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+16:38:40 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
 Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\GridPosition.o" "..\\myCode\\GridPosition.cpp" 
-..\myCode\GridPosition.cpp: In member function 'bool GridPosition::isValid() const':
-..\myCode\GridPosition.cpp:35:34: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
-   35 |         if(row<= 'Z' || row>='A' && column>0){
-      |                         ~~~~~~~~~^~~~~~~~~~~
-g++ -o BattleShip.exe "myCode\\GridPosition.o" "myCode\\Ship.o" "myCode\\main.o" 
-Info: Nothing to build for BattleShip
-17:29:04 **** Incremental Build of configuration Debug for project BattleShip ****
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+..\myCode\tests.cpp: In function 'void adjusterTests()':
+..\myCode\tests.cpp:64:11: warning: unused variable 'expected' [-Wunused-variable]
+   64 |     float expected[] = { -11, -1.1, 0, 0.9, 9 };
+      |           ^~~~~~~~
+..\myCode\tests.cpp: In function 'void sensorTests()':
+..\myCode\tests.cpp:77:11: warning: unused variable 'testValues' [-Wunused-variable]
+   77 |     float testValues[] = { -10, -1, 0, 1, 10 };
+      |           ^~~~~~~~~~
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+Info: Nothing to build for Exam-2023SoSe
+17:13:48 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
 Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\main.o" "..\\myCode\\main.cpp" 
-g++ -o BattleShip.exe "myCode\\GridPosition.o" "myCode\\Ship.o" "myCode\\main.o" 
-17:29:33 **** Incremental Build of configuration Debug for project BattleShip ****
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\TableBasedAdjuster.o" "..\\myCode\\TableBasedAdjuster.cpp" 
+..\myCode\TableBasedAdjuster.cpp: In member function 'TableBasedAdjuster& TableBasedAdjuster::addBreakpoint(float, float)':
+..\myCode\TableBasedAdjuster.cpp:5:12: error: invalid initialization of reference of type 'TableBasedAdjuster&' from expression of type 'std::map<float, float>'
+    5 |     return breakpoints;
+      |            ^~~~~~~~~~~
+..\myCode\TableBasedAdjuster.cpp: In member function 'virtual float TableBasedAdjuster::adjust(float) const':
+..\myCode\TableBasedAdjuster.cpp:14:37: error: no match for 'operator-' (operand types are 'std::map<float, float>::const_iterator' {aka 'std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::const_iterator'} and 'int')
+   14 |     float k_max = (breakpoints.end()-1)->first;
+      |                    ~~~~~~~~~~~~~~~~~^~
+      |                                   |  |
+      |                                   |  int
+      |                                   std::map<float, float>::const_iterator {aka std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::const_iterator}
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_algobase.h:67,
+                 from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:63,
+                 from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/map:62,
+                 from ..\myCode\TableBasedAdjuster.h:4,
+                 from ..\myCode\TableBasedAdjuster.cpp:1:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_iterator.h:625:5: note: candidate: 'template<class _IteratorL, class _IteratorR> decltype ((__y.base() - __x.base())) std::operator-(const reverse_iterator<_Iterator>&, const reverse_iterator<_IteratorR>&)'
+  625 |     operator-(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_iterator.h:625:5: note:   template argument deduction/substitution failed:
+..\myCode\TableBasedAdjuster.cpp:14:38: note:   'std::map<float, float>::const_iterator' {aka 'std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::const_iterator'} is not derived from 'const std::reverse_iterator<_Iterator>'
+   14 |     float k_max = (breakpoints.end()-1)->first;
+      |                                      ^
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_iterator.h:1800:5: note: candidate: 'template<class _IteratorL, class _IteratorR> decltype ((__x.base() - __y.base())) std::operator-(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)'
+ 1800 |     operator-(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_iterator.h:1800:5: note:   template argument deduction/substitution failed:
+..\myCode\TableBasedAdjuster.cpp:14:38: note:   'std::map<float, float>::const_iterator' {aka 'std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::const_iterator'} is not derived from 'const std::move_iterator<_IteratorL>'
+   14 |     float k_max = (breakpoints.end()-1)->first;
+      |                                      ^
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/map:63:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h: In instantiation of 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]':
+..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:944:38: error: no matching function for call to 'std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::_M_insert_range_unique(float&, float&)'
+  944 |         { _M_t._M_insert_range_unique(__first, __last); }
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1100:9: note: candidate: 'template<class _InputIterator> std::__enable_if_t<std::is_same<_Val, typename std::iterator_traits<_Iter>::value_type>::value> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_insert_range_unique(_InputIterator, _InputIterator) [with _Key = float; _Val = std::pair<const float, float>; _KeyOfValue = std::_Select1st<std::pair<const float, float> >; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
+ 1100 |         _M_insert_range_unique(_InputIterator __first, _InputIterator __last)
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1100:9: note:   template argument deduction/substitution failed:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h: In substitution of 'template<class _InputIterator> std::__enable_if_t<std::is_same<std::pair<const float, float>, typename std::iterator_traits< <template-parameter-1-1> >::value_type>::value, void> std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::_M_insert_range_unique(_InputIterator, _InputIterator) [with _InputIterator = float]':
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:944:31:   required from 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
+..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1100:9: error: no type named 'value_type' in 'struct std::iterator_traits<float>'
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h: In instantiation of 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]':
+..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1109:9: note: candidate: 'template<class _InputIterator> std::__enable_if_t<(! std::is_same<_Val, typename std::iterator_traits<_Iter>::value_type>::value)> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_insert_range_unique(_InputIterator, _InputIterator) [with _Key = float; _Val = std::pair<const float, float>; _KeyOfValue = std::_Select1st<std::pair<const float, float> >; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
+ 1109 |         _M_insert_range_unique(_InputIterator __first, _InputIterator __last)
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1109:9: note:   template argument deduction/substitution failed:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h: In substitution of 'template<class _InputIterator> std::__enable_if_t<(! std::is_same<std::pair<const float, float>, typename std::iterator_traits< <template-parameter-1-1> >::value_type>::value), void> std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::_M_insert_range_unique(_InputIterator, _InputIterator) [with _InputIterator = float]':
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:944:31:   required from 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
+..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1108:59: error: no type named 'value_type' in 'struct std::iterator_traits<float>'
+ 1108 |         __enable_if_t<!__same_value_type<_InputIterator>::value>
+      |                                                           ^~~~~
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\main.o" "..\\myCode\\main.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+..\myCode\tests.cpp: In function 'void adjusterTests()':
+..\myCode\tests.cpp:68:11: warning: unused variable 'expected' [-Wunused-variable]
+   68 |     float expected[] = { -11, -1.1, 0, 0.9, 9 };
+      |           ^~~~~~~~
+..\myCode\tests.cpp: In function 'void sensorTests()':
+..\myCode\tests.cpp:81:11: warning: unused variable 'testValues' [-Wunused-variable]
+   81 |     float testValues[] = { -10, -1, 0, 1, 10 };
+      |           ^~~~~~~~~~
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find myCode\TableBasedAdjuster.o: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+17:13:50 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
 Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\GridPosition.o" "..\\myCode\\GridPosition.cpp" 
-..\myCode\GridPosition.cpp: In member function 'bool GridPosition::isValid() const':
-..\myCode\GridPosition.cpp:35:34: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
-   35 |         if(row<= 'Z' || row>='A' && column>0){
-      |                         ~~~~~~~~~^~~~~~~~~~~
-g++ -o BattleShip.exe "myCode\\GridPosition.o" "myCode\\Ship.o" "myCode\\main.o" 
-17:29:50 **** Incremental Build of configuration Debug for project BattleShip ****
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\TableBasedAdjuster.o" "..\\myCode\\TableBasedAdjuster.cpp" 
+..\myCode\TableBasedAdjuster.cpp: In member function 'TableBasedAdjuster& TableBasedAdjuster::addBreakpoint(float, float)':
+..\myCode\TableBasedAdjuster.cpp:5:12: error: invalid initialization of reference of type 'TableBasedAdjuster&' from expression of type 'std::map<float, float>'
+    5 |     return breakpoints;
+      |            ^~~~~~~~~~~
+..\myCode\TableBasedAdjuster.cpp: In member function 'virtual float TableBasedAdjuster::adjust(float) const':
+..\myCode\TableBasedAdjuster.cpp:14:37: error: no match for 'operator-' (operand types are 'std::map<float, float>::const_iterator' {aka 'std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::const_iterator'} and 'int')
+   14 |     float k_max = (breakpoints.end()-1)->first;
+      |                    ~~~~~~~~~~~~~~~~~^~
+      |                                   |  |
+      |                                   |  int
+      |                                   std::map<float, float>::const_iterator {aka std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::const_iterator}
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_algobase.h:67,
+                 from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:63,
+                 from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/map:62,
+                 from ..\myCode\TableBasedAdjuster.h:4,
+                 from ..\myCode\TableBasedAdjuster.cpp:1:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_iterator.h:625:5: note: candidate: 'template<class _IteratorL, class _IteratorR> decltype ((__y.base() - __x.base())) std::operator-(const reverse_iterator<_Iterator>&, const reverse_iterator<_IteratorR>&)'
+  625 |     operator-(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_iterator.h:625:5: note:   template argument deduction/substitution failed:
+..\myCode\TableBasedAdjuster.cpp:14:38: note:   'std::map<float, float>::const_iterator' {aka 'std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::const_iterator'} is not derived from 'const std::reverse_iterator<_Iterator>'
+   14 |     float k_max = (breakpoints.end()-1)->first;
+      |                                      ^
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_iterator.h:1800:5: note: candidate: 'template<class _IteratorL, class _IteratorR> decltype ((__x.base() - __y.base())) std::operator-(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)'
+ 1800 |     operator-(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_iterator.h:1800:5: note:   template argument deduction/substitution failed:
+..\myCode\TableBasedAdjuster.cpp:14:38: note:   'std::map<float, float>::const_iterator' {aka 'std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::const_iterator'} is not derived from 'const std::move_iterator<_IteratorL>'
+   14 |     float k_max = (breakpoints.end()-1)->first;
+      |                                      ^
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/map:63:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h: In instantiation of 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]':
+..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:944:38: error: no matching function for call to 'std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::_M_insert_range_unique(float&, float&)'
+  944 |         { _M_t._M_insert_range_unique(__first, __last); }
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1100:9: note: candidate: 'template<class _InputIterator> std::__enable_if_t<std::is_same<_Val, typename std::iterator_traits<_Iter>::value_type>::value> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_insert_range_unique(_InputIterator, _InputIterator) [with _Key = float; _Val = std::pair<const float, float>; _KeyOfValue = std::_Select1st<std::pair<const float, float> >; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
+ 1100 |         _M_insert_range_unique(_InputIterator __first, _InputIterator __last)
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1100:9: note:   template argument deduction/substitution failed:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h: In substitution of 'template<class _InputIterator> std::__enable_if_t<std::is_same<std::pair<const float, float>, typename std::iterator_traits< <template-parameter-1-1> >::value_type>::value, void> std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::_M_insert_range_unique(_InputIterator, _InputIterator) [with _InputIterator = float]':
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:944:31:   required from 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
+..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1100:9: error: no type named 'value_type' in 'struct std::iterator_traits<float>'
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h: In instantiation of 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]':
+..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1109:9: note: candidate: 'template<class _InputIterator> std::__enable_if_t<(! std::is_same<_Val, typename std::iterator_traits<_Iter>::value_type>::value)> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_insert_range_unique(_InputIterator, _InputIterator) [with _Key = float; _Val = std::pair<const float, float>; _KeyOfValue = std::_Select1st<std::pair<const float, float> >; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
+ 1109 |         _M_insert_range_unique(_InputIterator __first, _InputIterator __last)
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1109:9: note:   template argument deduction/substitution failed:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h: In substitution of 'template<class _InputIterator> std::__enable_if_t<(! std::is_same<std::pair<const float, float>, typename std::iterator_traits< <template-parameter-1-1> >::value_type>::value), void> std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::_M_insert_range_unique(_InputIterator, _InputIterator) [with _InputIterator = float]':
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:944:31:   required from 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
+..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1108:59: error: no type named 'value_type' in 'struct std::iterator_traits<float>'
+ 1108 |         __enable_if_t<!__same_value_type<_InputIterator>::value>
+      |                                                           ^~~~~
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find myCode\TableBasedAdjuster.o: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+17:14:40 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
 Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\GridPosition.o" "..\\myCode\\GridPosition.cpp" 
-..\myCode\GridPosition.cpp: In member function 'bool GridPosition::isValid() const':
-..\myCode\GridPosition.cpp:35:34: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
-   35 |         if(row<= 'Z' || row>='A' && column>0){
-      |                         ~~~~~~~~~^~~~~~~~~~~
-g++ -o BattleShip.exe "myCode\\GridPosition.o" "myCode\\Ship.o" "myCode\\main.o" 
-17:30:56 **** Incremental Build of configuration Debug for project BattleShip ****
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\TableBasedAdjuster.o" "..\\myCode\\TableBasedAdjuster.cpp" 
+..\myCode\TableBasedAdjuster.cpp: In member function 'TableBasedAdjuster& TableBasedAdjuster::addBreakpoint(float, float)':
+..\myCode\TableBasedAdjuster.cpp:5:12: error: invalid initialization of reference of type 'TableBasedAdjuster&' from expression of type 'std::map<float, float>'
+    5 |     return breakpoints;
+      |            ^~~~~~~~~~~
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/map:63,
+                 from ..\myCode\TableBasedAdjuster.h:4,
+                 from ..\myCode\TableBasedAdjuster.cpp:1:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h: In instantiation of 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]':
+..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:944:38: error: no matching function for call to 'std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::_M_insert_range_unique(float&, float&)'
+  944 |         { _M_t._M_insert_range_unique(__first, __last); }
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/map:62:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1100:9: note: candidate: 'template<class _InputIterator> std::__enable_if_t<std::is_same<_Val, typename std::iterator_traits<_Iter>::value_type>::value> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_insert_range_unique(_InputIterator, _InputIterator) [with _Key = float; _Val = std::pair<const float, float>; _KeyOfValue = std::_Select1st<std::pair<const float, float> >; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
+ 1100 |         _M_insert_range_unique(_InputIterator __first, _InputIterator __last)
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1100:9: note:   template argument deduction/substitution failed:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h: In substitution of 'template<class _InputIterator> std::__enable_if_t<std::is_same<std::pair<const float, float>, typename std::iterator_traits< <template-parameter-1-1> >::value_type>::value, void> std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::_M_insert_range_unique(_InputIterator, _InputIterator) [with _InputIterator = float]':
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:944:31:   required from 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
+..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1100:9: error: no type named 'value_type' in 'struct std::iterator_traits<float>'
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h: In instantiation of 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]':
+..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1109:9: note: candidate: 'template<class _InputIterator> std::__enable_if_t<(! std::is_same<_Val, typename std::iterator_traits<_Iter>::value_type>::value)> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_insert_range_unique(_InputIterator, _InputIterator) [with _Key = float; _Val = std::pair<const float, float>; _KeyOfValue = std::_Select1st<std::pair<const float, float> >; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
+ 1109 |         _M_insert_range_unique(_InputIterator __first, _InputIterator __last)
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1109:9: note:   template argument deduction/substitution failed:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h: In substitution of 'template<class _InputIterator> std::__enable_if_t<(! std::is_same<std::pair<const float, float>, typename std::iterator_traits< <template-parameter-1-1> >::value_type>::value), void> std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::_M_insert_range_unique(_InputIterator, _InputIterator) [with _InputIterator = float]':
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:944:31:   required from 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
+..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1108:59: error: no type named 'value_type' in 'struct std::iterator_traits<float>'
+ 1108 |         __enable_if_t<!__same_value_type<_InputIterator>::value>
+      |                                                           ^~~~~
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find myCode\TableBasedAdjuster.o: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+17:16:03 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
 Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\GridPosition.o" "..\\myCode\\GridPosition.cpp" 
-..\myCode\GridPosition.cpp: In member function 'bool GridPosition::isValid() const':
-..\myCode\GridPosition.cpp:35:34: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
-   35 |         if(row<= 'Z' || row>='A' && column>0){
-      |                         ~~~~~~~~~^~~~~~~~~~~
-g++ -o BattleShip.exe "myCode\\GridPosition.o" "myCode\\Ship.o" "myCode\\main.o" 
-17:31:52 **** Incremental Build of configuration Debug for project BattleShip ****
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\TableBasedAdjuster.o" "..\\myCode\\TableBasedAdjuster.cpp" 
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+Info: Nothing to build for Exam-2023SoSe
+17:16:22 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
 Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\GridPosition.o" "..\\myCode\\GridPosition.cpp" 
-..\myCode\GridPosition.cpp: In constructor 'GridPosition::GridPosition(std::string)':
-..\myCode\GridPosition.cpp:26:51: error: no matching function for call to 'stoi(int&)'
-   26 |                         cout<< "Col: "<< std::stoi(column) <<endl;
-      |                                          ~~~~~~~~~^~~~~~~~
-In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/string:54,
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+..\myCode\tests.cpp: In function 'void adjusterTests()':
+..\myCode\tests.cpp:68:11: warning: unused variable 'expected' [-Wunused-variable]
+   68 |     float expected[] = { -11, -1.1, 0, 0.9, 9 };
+      |           ^~~~~~~~
+..\myCode\tests.cpp: In function 'void sensorTests()':
+..\myCode\tests.cpp:81:11: warning: unused variable 'testValues' [-Wunused-variable]
+   81 |     float testValues[] = { -10, -1, 0, 1, 10 };
+      |           ^~~~~~~~~~
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+17:16:29 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+..\myCode\tests.cpp: In function 'void adjusterTests()':
+..\myCode\tests.cpp:68:11: warning: unused variable 'expected' [-Wunused-variable]
+   68 |     float expected[] = { -11, -1.1, 0, 0.9, 9 };
+      |           ^~~~~~~~
+..\myCode\tests.cpp: In function 'void sensorTests()':
+..\myCode\tests.cpp:81:11: warning: unused variable 'testValues' [-Wunused-variable]
+   81 |     float testValues[] = { -10, -1, 0, 1, 10 };
+      |           ^~~~~~~~~~
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+17:44:20 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+..\myCode\tests.cpp: In function 'void sensorTests()':
+..\myCode\tests.cpp:91:11: warning: unused variable 'testValues' [-Wunused-variable]
+   91 |     float testValues[] = { -10, -1, 0, 1, 10 };
+      |           ^~~~~~~~~~
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+17:44:32 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+..\myCode\tests.cpp: In function 'void sensorTests()':
+..\myCode\tests.cpp:91:11: warning: unused variable 'testValues' [-Wunused-variable]
+   91 |     float testValues[] = { -10, -1, 0, 1, 10 };
+      |           ^~~~~~~~~~
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+17:44:45 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+..\myCode\tests.cpp: In function 'void sensorTests()':
+..\myCode\tests.cpp:91:11: warning: unused variable 'testValues' [-Wunused-variable]
+   91 |     float testValues[] = { -10, -1, 0, 1, 10 };
+      |           ^~~~~~~~~~
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+18:11:17 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\TestSensor.o" "..\\myCode\\TestSensor.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+..\myCode\tests.cpp: In function 'void sensorTests()':
+..\myCode\tests.cpp:91:11: warning: unused variable 'testValues' [-Wunused-variable]
+   91 |     float testValues[] = { -10, -1, 0, 1, 10 };
+      |           ^~~~~~~~~~
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\Sensor.o" "..\\myCode\\Sensor.cpp" 
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+18:19:03 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+..\myCode\tests.cpp: In function 'void sensorTests()':
+..\myCode\tests.cpp:102:15: warning: unused variable 'rawVal' [-Wunused-variable]
+  102 |         float rawVal = ts.reading();
+      |               ^~~~~~
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+18:19:18 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+..\myCode\tests.cpp: In function 'void sensorTests()':
+..\myCode\tests.cpp:102:15: warning: unused variable 'rawVal' [-Wunused-variable]
+  102 |         float rawVal = ts.reading();
+      |               ^~~~~~
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+18:19:25 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+..\myCode\tests.cpp: In function 'void sensorTests()':
+..\myCode\tests.cpp:102:15: warning: unused variable 'rawVal' [-Wunused-variable]
+  102 |         float rawVal = ts.reading();
+      |               ^~~~~~
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+18:29:25 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+18:29:56 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+19:15:10 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/alloc_traits.h:33,
+                 from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ext/alloc_traits.h:34,
+                 from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/basic_string.h:39,
+                 from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/string:54,
                  from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/locale_classes.h:40,
                  from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ios_base.h:41,
                  from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ios:44,
                  from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:40,
                  from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/iostream:41,
-                 from ..\myCode\GridPosition.h:11,
-                 from ..\myCode\GridPosition.cpp:8:
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/basic_string.h:4108:3: note: candidate: 'int std::__cxx11::stoi(const std::string&, std::size_t*, int)'
- 4108 |   stoi(const string& __str, size_t* __idx = 0, int __base = 10)
-      |   ^~~~
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/basic_string.h:4108:22: note:   no known conversion for argument 1 from 'int' to 'const std::string&' {aka 'const std::__cxx11::basic_string<char>&'}
- 4108 |   stoi(const string& __str, size_t* __idx = 0, int __base = 10)
-      |        ~~~~~~~~~~~~~~^~~~~
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/basic_string.h:4260:3: note: candidate: 'int std::__cxx11::stoi(const std::wstring&, std::size_t*, int)'
- 4260 |   stoi(const wstring& __str, size_t* __idx = 0, int __base = 10)
-      |   ^~~~
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/basic_string.h:4260:23: note:   no known conversion for argument 1 from 'int' to 'const std::wstring&' {aka 'const std::__cxx11::basic_string<wchar_t>&'}
- 4260 |   stoi(const wstring& __str, size_t* __idx = 0, int __base = 10)
-      |        ~~~~~~~~~~~~~~~^~~~~
-..\myCode\GridPosition.cpp: In member function 'bool GridPosition::isValid() const':
-..\myCode\GridPosition.cpp:35:34: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
-   35 |         if(row<= 'Z' || row>='A' && column>0){
-      |                         ~~~~~~~~~^~~~~~~~~~~
-17:46:53 **** Incremental Build of configuration Debug for project BattleShip ****
+                 from ..\myCode\tests.cpp:1:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_construct.h: In instantiation of 'void std::_Construct(_Tp*, _Args&& ...) [with _Tp = LinearAdjuster; _Args = {LinearAdjuster*}]':
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/alloc_traits.h:660:19:   required from 'static void std::allocator_traits<std::allocator<void> >::construct(allocator_type&, _Up*, _Args&& ...) [with _Up = LinearAdjuster; _Args = {LinearAdjuster*}; allocator_type = std::allocator<void>]'
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/shared_ptr_base.h:604:39:   required from 'std::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {LinearAdjuster*}; _Tp = LinearAdjuster; _Alloc = std::allocator<void>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]'
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/shared_ptr_base.h:971:16:   required from 'std::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = LinearAdjuster; _Alloc = std::allocator<void>; _Args = {LinearAdjuster*}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]'
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/shared_ptr_base.h:1712:14:   required from 'std::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<void>; _Args = {LinearAdjuster*}; _Tp = LinearAdjuster; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]'
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/shared_ptr.h:464:59:   required from 'std::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<void>; _Args = {LinearAdjuster*}; _Tp = LinearAdjuster]'
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/shared_ptr.h:1009:14:   required from 'std::shared_ptr<typename std::enable_if<(! std::is_array< <template-parameter-1-1> >::value), _Tp>::type> std::make_shared(_Args&& ...) [with _Tp = LinearAdjuster; _Args = {LinearAdjuster*}; typename enable_if<(! is_array< <template-parameter-1-1> >::value), _Tp>::type = LinearAdjuster]'
+..\myCode\tests.cpp:117:53:   required from here
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_construct.h:119:7: error: no matching function for call to 'LinearAdjuster::LinearAdjuster(LinearAdjuster*)'
+  119 |       ::new((void*)__p) _Tp(std::forward<_Args>(__args)...);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\myCode\tests.cpp:8:
+..\myCode\LinearAdjuster.h:19:5: note: candidate: 'LinearAdjuster::LinearAdjuster(float, float)'
+   19 |     LinearAdjuster(float factor = 1, float offset = 0);
+      |     ^~~~~~~~~~~~~~
+..\myCode\LinearAdjuster.h:19:26: note:   no known conversion for argument 1 from 'LinearAdjuster*' to 'float'
+   19 |     LinearAdjuster(float factor = 1, float offset = 0);
+      |                    ~~~~~~^~~~~~~~~~
+..\myCode\LinearAdjuster.h:10:7: note: candidate: 'constexpr LinearAdjuster::LinearAdjuster(const LinearAdjuster&)'
+   10 | class LinearAdjuster: public Adjuster {
+      |       ^~~~~~~~~~~~~~
+..\myCode\LinearAdjuster.h:10:7: note:   no known conversion for argument 1 from 'LinearAdjuster*' to 'const LinearAdjuster&'
+..\myCode\LinearAdjuster.h:10:7: note: candidate: 'constexpr LinearAdjuster::LinearAdjuster(LinearAdjuster&&)'
+..\myCode\LinearAdjuster.h:10:7: note:   no known conversion for argument 1 from 'LinearAdjuster*' to 'LinearAdjuster&&'
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\LinearAdjuster.o" "..\\myCode\\LinearAdjuster.cpp" 
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find myCode\tests.o: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+19:15:31 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
 Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\GridPosition.o" "..\\myCode\\GridPosition.cpp" 
-..\myCode\GridPosition.cpp: In member function 'bool GridPosition::isValid() const':
-..\myCode\GridPosition.cpp:39:34: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
-   39 |         if(row<= 'Z' || row>='A' && column>0){
-      |                         ~~~~~~~~~^~~~~~~~~~~
-g++ -o BattleShip.exe "myCode\\GridPosition.o" "myCode\\Ship.o" "myCode\\main.o" 
-Info: Nothing to build for BattleShip
-18:19:36 **** Incremental Build of configuration Debug for project BattleShip ****
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+19:15:39 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
 Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Ship.o" "..\\myCode\\Ship.cpp" 
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\GridPosition.o" "..\\myCode\\GridPosition.cpp" 
-..\myCode\GridPosition.cpp: In member function 'bool GridPosition::isValid() const':
-..\myCode\GridPosition.cpp:38:34: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
-   38 |         if(row<= 'Z' || row>='A' && column>0){
-      |                         ~~~~~~~~~^~~~~~~~~~~
-g++ -o BattleShip.exe "myCode\\GridPosition.o" "myCode\\Ship.o" "myCode\\main.o" 
-18:32:45 **** Incremental Build of configuration Debug for project BattleShip ****
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+Info: Nothing to build for Exam-2023SoSe
+19:30:18 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
 Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Board.o" "..\\myCode\\Board.cpp" 
-..\myCode\Board.cpp:10:1: error: no declaration matches 'Board::Board()'
-   10 | Board::Board()
-      | ^~~~~
-In file included from ..\myCode\Board.cpp:8:
-..\myCode\Board.h:13:7: note: candidates are: 'constexpr Board::Board(const Board&)'
-   13 | class Board
-      |       ^~~~~
-..\myCode\Board.h:18:9: note:                 'Board::Board(int, int)'
-   18 |         Board(int rows, int columns);
-      |         ^~~~~
-..\myCode\Board.h:13:7: note: 'class Board' defined here
-   13 | class Board
-      |       ^~~~~
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 

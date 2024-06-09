@@ -7,7 +7,8 @@
 using namespace std;
 
 // Add your project's header files here
-#include "Ship.h"
+#include "Board.h"
+#include "ConsoleView.h"
 
 // Main program
 int main ()
@@ -16,5 +17,8 @@ int main ()
 	cout << "BattleShip started." << endl << endl;
 	GridPosition gp("A1");
 	cout<<gp.getColumn();
+	Board b(10,10);
+	ConsoleView cv(&b);
+	cv.print();
 	return 0;
 }

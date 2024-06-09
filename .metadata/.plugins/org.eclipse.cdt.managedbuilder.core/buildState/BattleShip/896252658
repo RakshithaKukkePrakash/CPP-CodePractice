@@ -1,17 +1,5 @@
 #
-#Tue Jun 04 18:32:46 CEST 2024
-Debug/myCode/main.o=1
-myCode/OpponentGrid.cpp=1
-Debug/myCode/OwnGrid.o=1
+#Sun Jun 09 16:34:24 CEST 2024
 Debug/myCode/ConsoleView.o=1
-Debug/myCode/Board.o=1
-myCode/OwnGrid.h=1
-myCode/OwnGrid.cpp=1
-myCode/Board.cpp=1
-Debug/myCode/OpponentGrid.o=1
-myCode/ConsoleView.h=1
-myCode/Board.h=1
 Debug/BattleShip.exe=1
-myCode/main.cpp=1
-myCode/OpponentGrid.h=1
 myCode/ConsoleView.cpp=1

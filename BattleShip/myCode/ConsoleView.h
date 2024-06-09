@@ -11,9 +11,11 @@
 class ConsoleView
 {
 	Board* board;
+
 public:
 	ConsoleView(Board* board);
 	void print();
+
 	virtual ~ConsoleView();
 };
 

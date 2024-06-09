@@ -14,7 +14,7 @@ class OwnGrid
 {
 	int rows;
 	int columns;
-	Ship ships;
+	//Ship ships;
 public:
 	OwnGrid(int rows, int columns);
 	int getRows() const;
