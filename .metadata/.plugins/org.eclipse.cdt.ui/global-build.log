@@ -1,387 +1,48 @@
-16:34:30 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
+22:02:38 **** Incremental Build of configuration Debug for project Exam-2019WiSe ****
 Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-..\myCode\tests.cpp: In function 'void adjusterTests()':
-..\myCode\tests.cpp:41:20: warning: comparison of integer expressions of different signedness: 'int' and 'long long unsigned int' [-Wsign-compare]
-   41 |     for(int i = 0;i< sizeof(testValues[0])/ sizeof(testValues); i++)
-      |                   ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-..\myCode\tests.cpp:63:11: warning: unused variable 'expected' [-Wunused-variable]
-   63 |     float expected[] = { -11, -1.1, 0, 0.9, 9 };
-      |           ^~~~~~~~
-..\myCode\tests.cpp: In function 'void sensorTests()':
-..\myCode\tests.cpp:76:11: warning: unused variable 'testValues' [-Wunused-variable]
-   76 |     float testValues[] = { -10, -1, 0, 1, 10 };
-      |           ^~~~~~~~~~
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-Info: Nothing to build for Exam-2023SoSe
-16:34:48 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Temperature.o" "..\\myCode\\Temperature.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Measurement.o" "..\\myCode\\Measurement.cpp" 
+g++ -o Exam-2019WiSe.exe "myCode\\Humidity.o" "myCode\\Measurement.o" "myCode\\MeasurementDb.o" "myCode\\Temperature.o" "myCode\\main.o" 
+Info: Nothing to build for Exam-2019WiSe
+23:50:10 **** Incremental Build of configuration Debug for project Exam-2019WiSe ****
 Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-..\myCode\tests.cpp: In function 'void adjusterTests()':
-..\myCode\tests.cpp:41:20: warning: comparison of integer expressions of different signedness: 'int' and 'long long unsigned int' [-Wsign-compare]
-   41 |     for(int i = 0;i< sizeof(testValues[0])/ sizeof(testValues); i++)
-      |                   ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-..\myCode\tests.cpp:63:11: warning: unused variable 'expected' [-Wunused-variable]
-   63 |     float expected[] = { -11, -1.1, 0, 0.9, 9 };
-      |           ^~~~~~~~
-..\myCode\tests.cpp: In function 'void sensorTests()':
-..\myCode\tests.cpp:76:11: warning: unused variable 'testValues' [-Wunused-variable]
-   76 |     float testValues[] = { -10, -1, 0, 1, 10 };
-      |           ^~~~~~~~~~
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-16:35:24 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\main.o" "..\\myCode\\main.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Humidity.o" "..\\myCode\\Humidity.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Measurement.o" "..\\myCode\\Measurement.cpp" 
+..\myCode\Measurement.cpp: In member function 'std::ostream& Measurement::operator<<(std::ostream&)':
+..\myCode\Measurement.cpp:44:1: error: no return statement in function returning non-void [-Werror=return-type]
+   44 | }
+      | ^
+cc1plus.exe: some warnings being treated as errors
+23:50:25 **** Incremental Build of configuration Debug for project Exam-2019WiSe ****
 Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-..\myCode\tests.cpp: In function 'void adjusterTests()':
-..\myCode\tests.cpp:63:11: warning: unused variable 'expected' [-Wunused-variable]
-   63 |     float expected[] = { -11, -1.1, 0, 0.9, 9 };
-      |           ^~~~~~~~
-..\myCode\tests.cpp: In function 'void sensorTests()':
-..\myCode\tests.cpp:76:11: warning: unused variable 'testValues' [-Wunused-variable]
-   76 |     float testValues[] = { -10, -1, 0, 1, 10 };
-      |           ^~~~~~~~~~
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-16:36:45 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
-Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-..\myCode\tests.cpp: In function 'void adjusterTests()':
-..\myCode\tests.cpp:64:11: warning: unused variable 'expected' [-Wunused-variable]
-   64 |     float expected[] = { -11, -1.1, 0, 0.9, 9 };
-      |           ^~~~~~~~
-..\myCode\tests.cpp: In function 'void sensorTests()':
-..\myCode\tests.cpp:77:11: warning: unused variable 'testValues' [-Wunused-variable]
-   77 |     float testValues[] = { -10, -1, 0, 1, 10 };
-      |           ^~~~~~~~~~
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-16:37:45 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
-Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-..\myCode\tests.cpp: In function 'void adjusterTests()':
-..\myCode\tests.cpp:41:20: warning: comparison of integer expressions of different signedness: 'int' and 'long long unsigned int' [-Wsign-compare]
-   41 |     for(int i = 0;i< sizeof(testValues) / sizeof(testValues[0]); i++)
-      |                   ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-..\myCode\tests.cpp:64:11: warning: unused variable 'expected' [-Wunused-variable]
-   64 |     float expected[] = { -11, -1.1, 0, 0.9, 9 };
-      |           ^~~~~~~~
-..\myCode\tests.cpp: In function 'void sensorTests()':
-..\myCode\tests.cpp:77:11: warning: unused variable 'testValues' [-Wunused-variable]
-   77 |     float testValues[] = { -10, -1, 0, 1, 10 };
-      |           ^~~~~~~~~~
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-16:37:53 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
-Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-..\myCode\tests.cpp: In function 'void adjusterTests()':
-..\myCode\tests.cpp:41:20: warning: comparison of integer expressions of different signedness: 'int' and 'long long unsigned int' [-Wsign-compare]
-   41 |     for(int i = 0;i< sizeof(testValues) / sizeof(testValues[0]); i++)
-      |                   ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-..\myCode\tests.cpp:64:11: warning: unused variable 'expected' [-Wunused-variable]
-   64 |     float expected[] = { -11, -1.1, 0, 0.9, 9 };
-      |           ^~~~~~~~
-..\myCode\tests.cpp: In function 'void sensorTests()':
-..\myCode\tests.cpp:77:11: warning: unused variable 'testValues' [-Wunused-variable]
-   77 |     float testValues[] = { -10, -1, 0, 1, 10 };
-      |           ^~~~~~~~~~
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-16:38:00 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
-Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-..\myCode\tests.cpp: In function 'void adjusterTests()':
-..\myCode\tests.cpp:41:20: warning: comparison of integer expressions of different signedness: 'int' and 'long long unsigned int' [-Wsign-compare]
-   41 |     for(int i = 0;i< sizeof(testValues) / sizeof(testValues[0]); i++)
-      |                   ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-..\myCode\tests.cpp:64:11: warning: unused variable 'expected' [-Wunused-variable]
-   64 |     float expected[] = { -11, -1.1, 0, 0.9, 9 };
-      |           ^~~~~~~~
-..\myCode\tests.cpp: In function 'void sensorTests()':
-..\myCode\tests.cpp:77:11: warning: unused variable 'testValues' [-Wunused-variable]
-   77 |     float testValues[] = { -10, -1, 0, 1, 10 };
-      |           ^~~~~~~~~~
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-16:38:40 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
-Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-..\myCode\tests.cpp: In function 'void adjusterTests()':
-..\myCode\tests.cpp:64:11: warning: unused variable 'expected' [-Wunused-variable]
-   64 |     float expected[] = { -11, -1.1, 0, 0.9, 9 };
-      |           ^~~~~~~~
-..\myCode\tests.cpp: In function 'void sensorTests()':
-..\myCode\tests.cpp:77:11: warning: unused variable 'testValues' [-Wunused-variable]
-   77 |     float testValues[] = { -10, -1, 0, 1, 10 };
-      |           ^~~~~~~~~~
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-Info: Nothing to build for Exam-2023SoSe
-17:13:48 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
-Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\TableBasedAdjuster.o" "..\\myCode\\TableBasedAdjuster.cpp" 
-..\myCode\TableBasedAdjuster.cpp: In member function 'TableBasedAdjuster& TableBasedAdjuster::addBreakpoint(float, float)':
-..\myCode\TableBasedAdjuster.cpp:5:12: error: invalid initialization of reference of type 'TableBasedAdjuster&' from expression of type 'std::map<float, float>'
-    5 |     return breakpoints;
-      |            ^~~~~~~~~~~
-..\myCode\TableBasedAdjuster.cpp: In member function 'virtual float TableBasedAdjuster::adjust(float) const':
-..\myCode\TableBasedAdjuster.cpp:14:37: error: no match for 'operator-' (operand types are 'std::map<float, float>::const_iterator' {aka 'std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::const_iterator'} and 'int')
-   14 |     float k_max = (breakpoints.end()-1)->first;
-      |                    ~~~~~~~~~~~~~~~~~^~
-      |                                   |  |
-      |                                   |  int
-      |                                   std::map<float, float>::const_iterator {aka std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::const_iterator}
-In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_algobase.h:67,
-                 from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:63,
-                 from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/map:62,
-                 from ..\myCode\TableBasedAdjuster.h:4,
-                 from ..\myCode\TableBasedAdjuster.cpp:1:
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_iterator.h:625:5: note: candidate: 'template<class _IteratorL, class _IteratorR> decltype ((__y.base() - __x.base())) std::operator-(const reverse_iterator<_Iterator>&, const reverse_iterator<_IteratorR>&)'
-  625 |     operator-(const reverse_iterator<_IteratorL>& __x,
-      |     ^~~~~~~~
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_iterator.h:625:5: note:   template argument deduction/substitution failed:
-..\myCode\TableBasedAdjuster.cpp:14:38: note:   'std::map<float, float>::const_iterator' {aka 'std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::const_iterator'} is not derived from 'const std::reverse_iterator<_Iterator>'
-   14 |     float k_max = (breakpoints.end()-1)->first;
-      |                                      ^
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_iterator.h:1800:5: note: candidate: 'template<class _IteratorL, class _IteratorR> decltype ((__x.base() - __y.base())) std::operator-(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)'
- 1800 |     operator-(const move_iterator<_IteratorL>& __x,
-      |     ^~~~~~~~
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_iterator.h:1800:5: note:   template argument deduction/substitution failed:
-..\myCode\TableBasedAdjuster.cpp:14:38: note:   'std::map<float, float>::const_iterator' {aka 'std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::const_iterator'} is not derived from 'const std::move_iterator<_IteratorL>'
-   14 |     float k_max = (breakpoints.end()-1)->first;
-      |                                      ^
-In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/map:63:
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h: In instantiation of 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]':
-..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:944:38: error: no matching function for call to 'std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::_M_insert_range_unique(float&, float&)'
-  944 |         { _M_t._M_insert_range_unique(__first, __last); }
-      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1100:9: note: candidate: 'template<class _InputIterator> std::__enable_if_t<std::is_same<_Val, typename std::iterator_traits<_Iter>::value_type>::value> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_insert_range_unique(_InputIterator, _InputIterator) [with _Key = float; _Val = std::pair<const float, float>; _KeyOfValue = std::_Select1st<std::pair<const float, float> >; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
- 1100 |         _M_insert_range_unique(_InputIterator __first, _InputIterator __last)
-      |         ^~~~~~~~~~~~~~~~~~~~~~
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1100:9: note:   template argument deduction/substitution failed:
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h: In substitution of 'template<class _InputIterator> std::__enable_if_t<std::is_same<std::pair<const float, float>, typename std::iterator_traits< <template-parameter-1-1> >::value_type>::value, void> std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::_M_insert_range_unique(_InputIterator, _InputIterator) [with _InputIterator = float]':
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:944:31:   required from 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
-..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1100:9: error: no type named 'value_type' in 'struct std::iterator_traits<float>'
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h: In instantiation of 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]':
-..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1109:9: note: candidate: 'template<class _InputIterator> std::__enable_if_t<(! std::is_same<_Val, typename std::iterator_traits<_Iter>::value_type>::value)> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_insert_range_unique(_InputIterator, _InputIterator) [with _Key = float; _Val = std::pair<const float, float>; _KeyOfValue = std::_Select1st<std::pair<const float, float> >; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
- 1109 |         _M_insert_range_unique(_InputIterator __first, _InputIterator __last)
-      |         ^~~~~~~~~~~~~~~~~~~~~~
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1109:9: note:   template argument deduction/substitution failed:
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h: In substitution of 'template<class _InputIterator> std::__enable_if_t<(! std::is_same<std::pair<const float, float>, typename std::iterator_traits< <template-parameter-1-1> >::value_type>::value), void> std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::_M_insert_range_unique(_InputIterator, _InputIterator) [with _InputIterator = float]':
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:944:31:   required from 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
-..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1108:59: error: no type named 'value_type' in 'struct std::iterator_traits<float>'
- 1108 |         __enable_if_t<!__same_value_type<_InputIterator>::value>
-      |                                                           ^~~~~
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\main.o" "..\\myCode\\main.cpp" 
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-..\myCode\tests.cpp: In function 'void adjusterTests()':
-..\myCode\tests.cpp:68:11: warning: unused variable 'expected' [-Wunused-variable]
-   68 |     float expected[] = { -11, -1.1, 0, 0.9, 9 };
-      |           ^~~~~~~~
-..\myCode\tests.cpp: In function 'void sensorTests()':
-..\myCode\tests.cpp:81:11: warning: unused variable 'testValues' [-Wunused-variable]
-   81 |     float testValues[] = { -10, -1, 0, 1, 10 };
-      |           ^~~~~~~~~~
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find myCode\TableBasedAdjuster.o: No such file or directory
-collect2.exe: error: ld returned 1 exit status
-17:13:50 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
-Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\TableBasedAdjuster.o" "..\\myCode\\TableBasedAdjuster.cpp" 
-..\myCode\TableBasedAdjuster.cpp: In member function 'TableBasedAdjuster& TableBasedAdjuster::addBreakpoint(float, float)':
-..\myCode\TableBasedAdjuster.cpp:5:12: error: invalid initialization of reference of type 'TableBasedAdjuster&' from expression of type 'std::map<float, float>'
-    5 |     return breakpoints;
-      |            ^~~~~~~~~~~
-..\myCode\TableBasedAdjuster.cpp: In member function 'virtual float TableBasedAdjuster::adjust(float) const':
-..\myCode\TableBasedAdjuster.cpp:14:37: error: no match for 'operator-' (operand types are 'std::map<float, float>::const_iterator' {aka 'std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::const_iterator'} and 'int')
-   14 |     float k_max = (breakpoints.end()-1)->first;
-      |                    ~~~~~~~~~~~~~~~~~^~
-      |                                   |  |
-      |                                   |  int
-      |                                   std::map<float, float>::const_iterator {aka std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::const_iterator}
-In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_algobase.h:67,
-                 from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:63,
-                 from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/map:62,
-                 from ..\myCode\TableBasedAdjuster.h:4,
-                 from ..\myCode\TableBasedAdjuster.cpp:1:
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_iterator.h:625:5: note: candidate: 'template<class _IteratorL, class _IteratorR> decltype ((__y.base() - __x.base())) std::operator-(const reverse_iterator<_Iterator>&, const reverse_iterator<_IteratorR>&)'
-  625 |     operator-(const reverse_iterator<_IteratorL>& __x,
-      |     ^~~~~~~~
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_iterator.h:625:5: note:   template argument deduction/substitution failed:
-..\myCode\TableBasedAdjuster.cpp:14:38: note:   'std::map<float, float>::const_iterator' {aka 'std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::const_iterator'} is not derived from 'const std::reverse_iterator<_Iterator>'
-   14 |     float k_max = (breakpoints.end()-1)->first;
-      |                                      ^
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_iterator.h:1800:5: note: candidate: 'template<class _IteratorL, class _IteratorR> decltype ((__x.base() - __y.base())) std::operator-(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)'
- 1800 |     operator-(const move_iterator<_IteratorL>& __x,
-      |     ^~~~~~~~
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_iterator.h:1800:5: note:   template argument deduction/substitution failed:
-..\myCode\TableBasedAdjuster.cpp:14:38: note:   'std::map<float, float>::const_iterator' {aka 'std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::const_iterator'} is not derived from 'const std::move_iterator<_IteratorL>'
-   14 |     float k_max = (breakpoints.end()-1)->first;
-      |                                      ^
-In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/map:63:
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h: In instantiation of 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]':
-..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:944:38: error: no matching function for call to 'std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::_M_insert_range_unique(float&, float&)'
-  944 |         { _M_t._M_insert_range_unique(__first, __last); }
-      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1100:9: note: candidate: 'template<class _InputIterator> std::__enable_if_t<std::is_same<_Val, typename std::iterator_traits<_Iter>::value_type>::value> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_insert_range_unique(_InputIterator, _InputIterator) [with _Key = float; _Val = std::pair<const float, float>; _KeyOfValue = std::_Select1st<std::pair<const float, float> >; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
- 1100 |         _M_insert_range_unique(_InputIterator __first, _InputIterator __last)
-      |         ^~~~~~~~~~~~~~~~~~~~~~
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1100:9: note:   template argument deduction/substitution failed:
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h: In substitution of 'template<class _InputIterator> std::__enable_if_t<std::is_same<std::pair<const float, float>, typename std::iterator_traits< <template-parameter-1-1> >::value_type>::value, void> std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::_M_insert_range_unique(_InputIterator, _InputIterator) [with _InputIterator = float]':
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:944:31:   required from 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
-..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1100:9: error: no type named 'value_type' in 'struct std::iterator_traits<float>'
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h: In instantiation of 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]':
-..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1109:9: note: candidate: 'template<class _InputIterator> std::__enable_if_t<(! std::is_same<_Val, typename std::iterator_traits<_Iter>::value_type>::value)> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_insert_range_unique(_InputIterator, _InputIterator) [with _Key = float; _Val = std::pair<const float, float>; _KeyOfValue = std::_Select1st<std::pair<const float, float> >; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
- 1109 |         _M_insert_range_unique(_InputIterator __first, _InputIterator __last)
-      |         ^~~~~~~~~~~~~~~~~~~~~~
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1109:9: note:   template argument deduction/substitution failed:
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h: In substitution of 'template<class _InputIterator> std::__enable_if_t<(! std::is_same<std::pair<const float, float>, typename std::iterator_traits< <template-parameter-1-1> >::value_type>::value), void> std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::_M_insert_range_unique(_InputIterator, _InputIterator) [with _InputIterator = float]':
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:944:31:   required from 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
-..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1108:59: error: no type named 'value_type' in 'struct std::iterator_traits<float>'
- 1108 |         __enable_if_t<!__same_value_type<_InputIterator>::value>
-      |                                                           ^~~~~
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find myCode\TableBasedAdjuster.o: No such file or directory
-collect2.exe: error: ld returned 1 exit status
-17:14:40 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
-Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\TableBasedAdjuster.o" "..\\myCode\\TableBasedAdjuster.cpp" 
-..\myCode\TableBasedAdjuster.cpp: In member function 'TableBasedAdjuster& TableBasedAdjuster::addBreakpoint(float, float)':
-..\myCode\TableBasedAdjuster.cpp:5:12: error: invalid initialization of reference of type 'TableBasedAdjuster&' from expression of type 'std::map<float, float>'
-    5 |     return breakpoints;
-      |            ^~~~~~~~~~~
-In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/map:63,
-                 from ..\myCode\TableBasedAdjuster.h:4,
-                 from ..\myCode\TableBasedAdjuster.cpp:1:
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h: In instantiation of 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]':
-..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:944:38: error: no matching function for call to 'std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::_M_insert_range_unique(float&, float&)'
-  944 |         { _M_t._M_insert_range_unique(__first, __last); }
-      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
-In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/map:62:
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1100:9: note: candidate: 'template<class _InputIterator> std::__enable_if_t<std::is_same<_Val, typename std::iterator_traits<_Iter>::value_type>::value> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_insert_range_unique(_InputIterator, _InputIterator) [with _Key = float; _Val = std::pair<const float, float>; _KeyOfValue = std::_Select1st<std::pair<const float, float> >; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
- 1100 |         _M_insert_range_unique(_InputIterator __first, _InputIterator __last)
-      |         ^~~~~~~~~~~~~~~~~~~~~~
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1100:9: note:   template argument deduction/substitution failed:
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h: In substitution of 'template<class _InputIterator> std::__enable_if_t<std::is_same<std::pair<const float, float>, typename std::iterator_traits< <template-parameter-1-1> >::value_type>::value, void> std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::_M_insert_range_unique(_InputIterator, _InputIterator) [with _InputIterator = float]':
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:944:31:   required from 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
-..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1100:9: error: no type named 'value_type' in 'struct std::iterator_traits<float>'
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h: In instantiation of 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]':
-..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1109:9: note: candidate: 'template<class _InputIterator> std::__enable_if_t<(! std::is_same<_Val, typename std::iterator_traits<_Iter>::value_type>::value)> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_insert_range_unique(_InputIterator, _InputIterator) [with _Key = float; _Val = std::pair<const float, float>; _KeyOfValue = std::_Select1st<std::pair<const float, float> >; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
- 1109 |         _M_insert_range_unique(_InputIterator __first, _InputIterator __last)
-      |         ^~~~~~~~~~~~~~~~~~~~~~
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1109:9: note:   template argument deduction/substitution failed:
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h: In substitution of 'template<class _InputIterator> std::__enable_if_t<(! std::is_same<std::pair<const float, float>, typename std::iterator_traits< <template-parameter-1-1> >::value_type>::value), void> std::_Rb_tree<float, std::pair<const float, float>, std::_Select1st<std::pair<const float, float> >, std::less<float>, std::allocator<std::pair<const float, float> > >::_M_insert_range_unique(_InputIterator, _InputIterator) [with _InputIterator = float]':
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:944:31:   required from 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = float; _Key = float; _Tp = float; _Compare = std::less<float>; _Alloc = std::allocator<std::pair<const float, float> >]'
-..\myCode\TableBasedAdjuster.cpp:4:23:   required from here
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_tree.h:1108:59: error: no type named 'value_type' in 'struct std::iterator_traits<float>'
- 1108 |         __enable_if_t<!__same_value_type<_InputIterator>::value>
-      |                                                           ^~~~~
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find myCode\TableBasedAdjuster.o: No such file or directory
-collect2.exe: error: ld returned 1 exit status
-17:16:03 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
-Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\TableBasedAdjuster.o" "..\\myCode\\TableBasedAdjuster.cpp" 
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-Info: Nothing to build for Exam-2023SoSe
-17:16:22 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
-Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-..\myCode\tests.cpp: In function 'void adjusterTests()':
-..\myCode\tests.cpp:68:11: warning: unused variable 'expected' [-Wunused-variable]
-   68 |     float expected[] = { -11, -1.1, 0, 0.9, 9 };
-      |           ^~~~~~~~
-..\myCode\tests.cpp: In function 'void sensorTests()':
-..\myCode\tests.cpp:81:11: warning: unused variable 'testValues' [-Wunused-variable]
-   81 |     float testValues[] = { -10, -1, 0, 1, 10 };
-      |           ^~~~~~~~~~
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-17:16:29 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
-Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-..\myCode\tests.cpp: In function 'void adjusterTests()':
-..\myCode\tests.cpp:68:11: warning: unused variable 'expected' [-Wunused-variable]
-   68 |     float expected[] = { -11, -1.1, 0, 0.9, 9 };
-      |           ^~~~~~~~
-..\myCode\tests.cpp: In function 'void sensorTests()':
-..\myCode\tests.cpp:81:11: warning: unused variable 'testValues' [-Wunused-variable]
-   81 |     float testValues[] = { -10, -1, 0, 1, 10 };
-      |           ^~~~~~~~~~
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-17:44:20 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
-Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-..\myCode\tests.cpp: In function 'void sensorTests()':
-..\myCode\tests.cpp:91:11: warning: unused variable 'testValues' [-Wunused-variable]
-   91 |     float testValues[] = { -10, -1, 0, 1, 10 };
-      |           ^~~~~~~~~~
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-17:44:32 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
-Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-..\myCode\tests.cpp: In function 'void sensorTests()':
-..\myCode\tests.cpp:91:11: warning: unused variable 'testValues' [-Wunused-variable]
-   91 |     float testValues[] = { -10, -1, 0, 1, 10 };
-      |           ^~~~~~~~~~
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-17:44:45 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
-Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-..\myCode\tests.cpp: In function 'void sensorTests()':
-..\myCode\tests.cpp:91:11: warning: unused variable 'testValues' [-Wunused-variable]
-   91 |     float testValues[] = { -10, -1, 0, 1, 10 };
-      |           ^~~~~~~~~~
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-18:11:17 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
-Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\TestSensor.o" "..\\myCode\\TestSensor.cpp" 
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-..\myCode\tests.cpp: In function 'void sensorTests()':
-..\myCode\tests.cpp:91:11: warning: unused variable 'testValues' [-Wunused-variable]
-   91 |     float testValues[] = { -10, -1, 0, 1, 10 };
-      |           ^~~~~~~~~~
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\Sensor.o" "..\\myCode\\Sensor.cpp" 
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-18:19:03 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
-Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-..\myCode\tests.cpp: In function 'void sensorTests()':
-..\myCode\tests.cpp:102:15: warning: unused variable 'rawVal' [-Wunused-variable]
-  102 |         float rawVal = ts.reading();
-      |               ^~~~~~
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-18:19:18 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
-Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-..\myCode\tests.cpp: In function 'void sensorTests()':
-..\myCode\tests.cpp:102:15: warning: unused variable 'rawVal' [-Wunused-variable]
-  102 |         float rawVal = ts.reading();
-      |               ^~~~~~
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-18:19:25 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
-Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-..\myCode\tests.cpp: In function 'void sensorTests()':
-..\myCode\tests.cpp:102:15: warning: unused variable 'rawVal' [-Wunused-variable]
-  102 |         float rawVal = ts.reading();
-      |               ^~~~~~
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-18:29:25 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
-Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-18:29:56 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
-Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-19:15:10 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
-Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\MeasurementDb.o" "..\\myCode\\MeasurementDb.cpp" 
+..\myCode\MeasurementDb.cpp: In member function 'void MeasurementDb::addMeasurement(const std::string&, std::shared_ptr<Measurement>)':
+..\myCode\MeasurementDb.cpp:19:69: error: no match for 'operator=' (operand types are 'std::map<std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >::mapped_type' {aka 'std::vector<std::shared_ptr<Measurement> >'} and 'std::shared_ptr<Measurement>')
+   19 |         data[location] =  std::make_shared<Measurement> (measurement);
+      |                                                                     ^
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/vector:72,
+                 from ..\myCode\MeasurementDb.h:13,
+                 from ..\myCode\MeasurementDb.cpp:8:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/vector.tcc:210:5: note: candidate: 'std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = std::shared_ptr<Measurement>; _Alloc = std::allocator<std::shared_ptr<Measurement> >]'
+  210 |     vector<_Tp, _Alloc>::
+      |     ^~~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/vector.tcc:211:42: note:   no known conversion for argument 1 from 'std::shared_ptr<Measurement>' to 'const std::vector<std::shared_ptr<Measurement> >&'
+  211 |     operator=(const vector<_Tp, _Alloc>& __x)
+      |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/vector:66:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_vector.h:763:7: note: candidate: 'std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = std::shared_ptr<Measurement>; _Alloc = std::allocator<std::shared_ptr<Measurement> >]'
+  763 |       operator=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_vector.h:763:26: note:   no known conversion for argument 1 from 'std::shared_ptr<Measurement>' to 'std::vector<std::shared_ptr<Measurement> >&&'
+  763 |       operator=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |                 ~~~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_vector.h:785:7: note: candidate: 'std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = std::shared_ptr<Measurement>; _Alloc = std::allocator<std::shared_ptr<Measurement> >]'
+  785 |       operator=(initializer_list<value_type> __l)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_vector.h:785:46: note:   no known conversion for argument 1 from 'std::shared_ptr<Measurement>' to 'std::initializer_list<std::shared_ptr<Measurement> >'
+  785 |       operator=(initializer_list<value_type> __l)
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
 In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/alloc_traits.h:33,
                  from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ext/alloc_traits.h:34,
                  from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/basic_string.h:39,
@@ -391,45 +52,913 @@ In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.
                  from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ios:44,
                  from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:40,
                  from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/iostream:41,
-                 from ..\myCode\tests.cpp:1:
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_construct.h: In instantiation of 'void std::_Construct(_Tp*, _Args&& ...) [with _Tp = LinearAdjuster; _Args = {LinearAdjuster*}]':
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/alloc_traits.h:660:19:   required from 'static void std::allocator_traits<std::allocator<void> >::construct(allocator_type&, _Up*, _Args&& ...) [with _Up = LinearAdjuster; _Args = {LinearAdjuster*}; allocator_type = std::allocator<void>]'
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/shared_ptr_base.h:604:39:   required from 'std::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {LinearAdjuster*}; _Tp = LinearAdjuster; _Alloc = std::allocator<void>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]'
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/shared_ptr_base.h:971:16:   required from 'std::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = LinearAdjuster; _Alloc = std::allocator<void>; _Args = {LinearAdjuster*}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]'
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/shared_ptr_base.h:1712:14:   required from 'std::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<void>; _Args = {LinearAdjuster*}; _Tp = LinearAdjuster; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]'
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/shared_ptr.h:464:59:   required from 'std::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<void>; _Args = {LinearAdjuster*}; _Tp = LinearAdjuster]'
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/shared_ptr.h:1009:14:   required from 'std::shared_ptr<typename std::enable_if<(! std::is_array< <template-parameter-1-1> >::value), _Tp>::type> std::make_shared(_Args&& ...) [with _Tp = LinearAdjuster; _Args = {LinearAdjuster*}; typename enable_if<(! is_array< <template-parameter-1-1> >::value), _Tp>::type = LinearAdjuster]'
-..\myCode\tests.cpp:117:53:   required from here
-C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_construct.h:119:7: error: no matching function for call to 'LinearAdjuster::LinearAdjuster(LinearAdjuster*)'
+                 from ..\myCode\MeasurementDb.h:11:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_construct.h: In instantiation of 'void std::_Construct(_Tp*, _Args&& ...) [with _Tp = Measurement; _Args = {shared_ptr<Measurement>&}]':
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/alloc_traits.h:660:19:   required from 'static void std::allocator_traits<std::allocator<void> >::construct(allocator_type&, _Up*, _Args&& ...) [with _Up = Measurement; _Args = {std::shared_ptr<Measurement>&}; allocator_type = std::allocator<void>]'
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/shared_ptr_base.h:604:39:   required from 'std::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {std::shared_ptr<Measurement>&}; _Tp = Measurement; _Alloc = std::allocator<void>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]'
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/shared_ptr_base.h:971:16:   required from 'std::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = Measurement; _Alloc = std::allocator<void>; _Args = {std::shared_ptr<Measurement>&}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]'
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/shared_ptr_base.h:1712:14:   required from 'std::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<void>; _Args = {std::shared_ptr<Measurement>&}; _Tp = Measurement; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]'
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/shared_ptr.h:464:59:   required from 'std::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<void>; _Args = {std::shared_ptr<Measurement>&}; _Tp = Measurement]'
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/shared_ptr.h:1009:14:   required from 'std::shared_ptr<typename std::enable_if<(! std::is_array< <template-parameter-1-1> >::value), _Tp>::type> std::make_shared(_Args&& ...) [with _Tp = Measurement; _Args = {shared_ptr<Measurement>&}; typename enable_if<(! is_array< <template-parameter-1-1> >::value), _Tp>::type = Measurement]'
+..\myCode\MeasurementDb.cpp:19:50:   required from here
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_construct.h:119:7: error: invalid new-expression of abstract class type 'Measurement'
   119 |       ::new((void*)__p) _Tp(std::forward<_Args>(__args)...);
       |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ..\myCode\tests.cpp:8:
-..\myCode\LinearAdjuster.h:19:5: note: candidate: 'LinearAdjuster::LinearAdjuster(float, float)'
-   19 |     LinearAdjuster(float factor = 1, float offset = 0);
-      |     ^~~~~~~~~~~~~~
-..\myCode\LinearAdjuster.h:19:26: note:   no known conversion for argument 1 from 'LinearAdjuster*' to 'float'
-   19 |     LinearAdjuster(float factor = 1, float offset = 0);
-      |                    ~~~~~~^~~~~~~~~~
-..\myCode\LinearAdjuster.h:10:7: note: candidate: 'constexpr LinearAdjuster::LinearAdjuster(const LinearAdjuster&)'
-   10 | class LinearAdjuster: public Adjuster {
-      |       ^~~~~~~~~~~~~~
-..\myCode\LinearAdjuster.h:10:7: note:   no known conversion for argument 1 from 'LinearAdjuster*' to 'const LinearAdjuster&'
-..\myCode\LinearAdjuster.h:10:7: note: candidate: 'constexpr LinearAdjuster::LinearAdjuster(LinearAdjuster&&)'
-..\myCode\LinearAdjuster.h:10:7: note:   no known conversion for argument 1 from 'LinearAdjuster*' to 'LinearAdjuster&&'
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\LinearAdjuster.o" "..\\myCode\\LinearAdjuster.cpp" 
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find myCode\tests.o: No such file or directory
+In file included from ..\myCode\MeasurementDb.h:15:
+..\myCode\Measurement.h:13:7: note:   because the following virtual functions are pure within 'Measurement':
+   13 | class Measurement
+      |       ^~~~~~~~~~~
+..\myCode\Measurement.h:21:29: note:     'virtual std::string Measurement::toString() const'
+   21 |         virtual std::string toString() const = 0;
+      |                             ^~~~~~~~
+23:50:40 **** Incremental Build of configuration Debug for project Exam-2019WiSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Temperature.o" "..\\myCode\\Temperature.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\MeasurementDb.o" "..\\myCode\\MeasurementDb.cpp" 
+..\myCode\MeasurementDb.cpp: In member function 'void MeasurementDb::addMeasurement(const std::string&, std::shared_ptr<Measurement>)':
+..\myCode\MeasurementDb.cpp:19:32: error: no match for 'operator=' (operand types are 'std::map<std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >::mapped_type' {aka 'std::vector<std::shared_ptr<Measurement> >'} and '<unresolved overloaded function type>')
+   19 |         data[location] =  std::make_shared<Measurement> measurement;
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/vector:72,
+                 from ..\myCode\MeasurementDb.h:13,
+                 from ..\myCode\MeasurementDb.cpp:8:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/vector.tcc:210:5: note: candidate: 'std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = std::shared_ptr<Measurement>; _Alloc = std::allocator<std::shared_ptr<Measurement> >]'
+  210 |     vector<_Tp, _Alloc>::
+      |     ^~~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/vector.tcc:211:42: note:   no known conversion for argument 1 from '<unresolved overloaded function type>' to 'const std::vector<std::shared_ptr<Measurement> >&'
+  211 |     operator=(const vector<_Tp, _Alloc>& __x)
+      |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/vector:66:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_vector.h:763:7: note: candidate: 'std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = std::shared_ptr<Measurement>; _Alloc = std::allocator<std::shared_ptr<Measurement> >]'
+  763 |       operator=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_vector.h:763:26: note:   no known conversion for argument 1 from '<unresolved overloaded function type>' to 'std::vector<std::shared_ptr<Measurement> >&&'
+  763 |       operator=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |                 ~~~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_vector.h:785:7: note: candidate: 'std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = std::shared_ptr<Measurement>; _Alloc = std::allocator<std::shared_ptr<Measurement> >]'
+  785 |       operator=(initializer_list<value_type> __l)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_vector.h:785:46: note:   no known conversion for argument 1 from '<unresolved overloaded function type>' to 'std::initializer_list<std::shared_ptr<Measurement> >'
+  785 |       operator=(initializer_list<value_type> __l)
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+23:51:16 **** Incremental Build of configuration Debug for project Exam-2019WiSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\MeasurementDb.o" "..\\myCode\\MeasurementDb.cpp" 
+..\myCode\MeasurementDb.cpp: In member function 'void MeasurementDb::addMeasurement(const std::string&, std::shared_ptr<Measurement>)':
+..\myCode\MeasurementDb.cpp:19:59: error: expected ')' before 'measurement'
+   19 |         data.insert(location,std::make_shared<Measurement> measurement);
+      |                    ~                                      ^~~~~~~~~~~~
+      |                                                           )
+..\myCode\MeasurementDb.cpp:19:20: error: no matching function for call to 'std::map<std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >::insert(const std::string&, <unresolved overloaded function type>)'
+   19 |         data.insert(location,std::make_shared<Measurement> measurement);
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/map:63,
+                 from ..\myCode\MeasurementDb.h:12,
+                 from ..\myCode\MeasurementDb.cpp:8:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:848:9: note: candidate: 'template<class _Pair> std::__enable_if_t<std::is_constructible<std::pair<const _Key, _Tp>, _Pair>::value, std::pair<typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<std::pair<const _Key, _Tp> >::other>::iterator, bool> > std::map<_Key, _Tp, _Compare, _Alloc>::insert(_Pair&&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::vector<std::shared_ptr<Measurement> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >]'
+  848 |         insert(_Pair&& __x)
+      |         ^~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:848:9: note:   template argument deduction/substitution failed:
+..\myCode\MeasurementDb.cpp:19:20: note:   candidate expects 1 argument, 2 provided
+   19 |         data.insert(location,std::make_shared<Measurement> measurement);
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:925:9: note: candidate: 'template<class _Pair> std::__enable_if_t<std::is_constructible<std::pair<const _Key, _Tp>, _Pair>::value, typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<std::pair<const _Key, _Tp> >::other>::iterator> std::map<_Key, _Tp, _Compare, _Alloc>::insert(const_iterator, _Pair&&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::vector<std::shared_ptr<Measurement> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >]'
+  925 |         insert(const_iterator __position, _Pair&& __x)
+      |         ^~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:925:9: note:   template argument deduction/substitution failed:
+..\myCode\MeasurementDb.cpp:19:21: note:   cannot convert 'location' (type 'const std::string' {aka 'const std::__cxx11::basic_string<char>'}) to type 'std::map<std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >::const_iterator' {aka 'std::_Rb_tree<std::__cxx11::basic_string<char>, std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > > >::const_iterator'}
+   19 |         data.insert(location,std::make_shared<Measurement> measurement);
+      |                     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:943:9: note: candidate: 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = std::__cxx11::basic_string<char>; _Key = std::__cxx11::basic_string<char>; _Tp = std::vector<std::shared_ptr<Measurement> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >]'
+  943 |         insert(_InputIterator __first, _InputIterator __last)
+      |         ^~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:943:55: note:   no known conversion for argument 2 from '<unresolved overloaded function type>' to 'std::__cxx11::basic_string<char>'
+  943 |         insert(_InputIterator __first, _InputIterator __last)
+      |                                        ~~~~~~~~~~~~~~~^~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:835:7: note: candidate: 'std::pair<typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<std::pair<const _Key, _Tp> >::other>::iterator, bool> std::map<_Key, _Tp, _Compare, _Alloc>::insert(const value_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::vector<std::shared_ptr<Measurement> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >; typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<std::pair<const _Key, _Tp> >::other>::iterator = std::_Rb_tree<std::__cxx11::basic_string<char>, std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > > >::iterator; typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<std::pair<const _Key, _Tp> >::other = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >; typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<std::pair<const _Key, _Tp> > = __gnu_cxx::__alloc_traits<std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >, std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >::rebind<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >; typename _Alloc::value_type = std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >; value_type = std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >]'
+  835 |       insert(const value_type& __x)
+      |       ^~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:835:7: note:   candidate expects 1 argument, 2 provided
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:842:7: note: candidate: 'std::pair<typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<std::pair<const _Key, _Tp> >::other>::iterator, bool> std::map<_Key, _Tp, _Compare, _Alloc>::insert(value_type&&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::vector<std::shared_ptr<Measurement> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >; typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<std::pair<const _Key, _Tp> >::other>::iterator = std::_Rb_tree<std::__cxx11::basic_string<char>, std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > > >::iterator; typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<std::pair<const _Key, _Tp> >::other = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >; typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<std::pair<const _Key, _Tp> > = __gnu_cxx::__alloc_traits<std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >, std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >::rebind<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >; typename _Alloc::value_type = std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >; value_type = std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >]'
+  842 |       insert(value_type&& __x)
+      |       ^~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:842:7: note:   candidate expects 1 argument, 2 provided
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:880:7: note: candidate: 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(std::initializer_list<std::pair<const _Key, _Tp> >) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::vector<std::shared_ptr<Measurement> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >]'
+  880 |       insert(std::initializer_list<value_type> __list)
+      |       ^~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:880:7: note:   candidate expects 1 argument, 2 provided
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:910:7: note: candidate: 'std::map<_Key, _Tp, _Compare, _Alloc>::iterator std::map<_Key, _Tp, _Compare, _Alloc>::insert(const_iterator, const value_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::vector<std::shared_ptr<Measurement> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >; iterator = std::_Rb_tree<std::__cxx11::basic_string<char>, std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > > >::iterator; const_iterator = std::_Rb_tree<std::__cxx11::basic_string<char>, std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > > >::const_iterator; value_type = std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >]'
+  910 |       insert(const_iterator __position, const value_type& __x)
+      |       ^~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:910:29: note:   no known conversion for argument 1 from 'const std::string' {aka 'const std::__cxx11::basic_string<char>'} to 'std::map<std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >::const_iterator' {aka 'std::_Rb_tree<std::__cxx11::basic_string<char>, std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > > >::const_iterator'}
+  910 |       insert(const_iterator __position, const value_type& __x)
+      |              ~~~~~~~~~~~~~~~^~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:920:7: note: candidate: 'std::map<_Key, _Tp, _Compare, _Alloc>::iterator std::map<_Key, _Tp, _Compare, _Alloc>::insert(const_iterator, value_type&&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::vector<std::shared_ptr<Measurement> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >; iterator = std::_Rb_tree<std::__cxx11::basic_string<char>, std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > > >::iterator; const_iterator = std::_Rb_tree<std::__cxx11::basic_string<char>, std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > > >::const_iterator; value_type = std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >]'
+  920 |       insert(const_iterator __position, value_type&& __x)
+      |       ^~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:920:29: note:   no known conversion for argument 1 from 'const std::string' {aka 'const std::__cxx11::basic_string<char>'} to 'std::map<std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >::const_iterator' {aka 'std::_Rb_tree<std::__cxx11::basic_string<char>, std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > > >::const_iterator'}
+  920 |       insert(const_iterator __position, value_type&& __x)
+      |              ~~~~~~~~~~~~~~~^~~~~~~~~~
+23:51:40 **** Incremental Build of configuration Debug for project Exam-2019WiSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\MeasurementDb.o" "..\\myCode\\MeasurementDb.cpp" 
+..\myCode\MeasurementDb.cpp: In member function 'void MeasurementDb::addMeasurement(const std::string&, std::shared_ptr<Measurement>)':
+..\myCode\MeasurementDb.cpp:19:20: error: no matching function for call to 'std::map<std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >::insert(const std::string&, <unresolved overloaded function type>)'
+   19 |         data.insert(location,std::make_shared<Measurement>);
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/map:63,
+                 from ..\myCode\MeasurementDb.h:12,
+                 from ..\myCode\MeasurementDb.cpp:8:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:848:9: note: candidate: 'template<class _Pair> std::__enable_if_t<std::is_constructible<std::pair<const _Key, _Tp>, _Pair>::value, std::pair<typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<std::pair<const _Key, _Tp> >::other>::iterator, bool> > std::map<_Key, _Tp, _Compare, _Alloc>::insert(_Pair&&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::vector<std::shared_ptr<Measurement> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >]'
+  848 |         insert(_Pair&& __x)
+      |         ^~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:848:9: note:   template argument deduction/substitution failed:
+..\myCode\MeasurementDb.cpp:19:20: note:   candidate expects 1 argument, 2 provided
+   19 |         data.insert(location,std::make_shared<Measurement>);
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:925:9: note: candidate: 'template<class _Pair> std::__enable_if_t<std::is_constructible<std::pair<const _Key, _Tp>, _Pair>::value, typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<std::pair<const _Key, _Tp> >::other>::iterator> std::map<_Key, _Tp, _Compare, _Alloc>::insert(const_iterator, _Pair&&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::vector<std::shared_ptr<Measurement> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >]'
+  925 |         insert(const_iterator __position, _Pair&& __x)
+      |         ^~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:925:9: note:   template argument deduction/substitution failed:
+..\myCode\MeasurementDb.cpp:19:21: note:   cannot convert 'location' (type 'const std::string' {aka 'const std::__cxx11::basic_string<char>'}) to type 'std::map<std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >::const_iterator' {aka 'std::_Rb_tree<std::__cxx11::basic_string<char>, std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > > >::const_iterator'}
+   19 |         data.insert(location,std::make_shared<Measurement>);
+      |                     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:943:9: note: candidate: 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = std::__cxx11::basic_string<char>; _Key = std::__cxx11::basic_string<char>; _Tp = std::vector<std::shared_ptr<Measurement> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >]'
+  943 |         insert(_InputIterator __first, _InputIterator __last)
+      |         ^~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:943:55: note:   no known conversion for argument 2 from '<unresolved overloaded function type>' to 'std::__cxx11::basic_string<char>'
+  943 |         insert(_InputIterator __first, _InputIterator __last)
+      |                                        ~~~~~~~~~~~~~~~^~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:835:7: note: candidate: 'std::pair<typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<std::pair<const _Key, _Tp> >::other>::iterator, bool> std::map<_Key, _Tp, _Compare, _Alloc>::insert(const value_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::vector<std::shared_ptr<Measurement> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >; typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<std::pair<const _Key, _Tp> >::other>::iterator = std::_Rb_tree<std::__cxx11::basic_string<char>, std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > > >::iterator; typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<std::pair<const _Key, _Tp> >::other = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >; typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<std::pair<const _Key, _Tp> > = __gnu_cxx::__alloc_traits<std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >, std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >::rebind<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >; typename _Alloc::value_type = std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >; value_type = std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >]'
+  835 |       insert(const value_type& __x)
+      |       ^~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:835:7: note:   candidate expects 1 argument, 2 provided
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:842:7: note: candidate: 'std::pair<typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<std::pair<const _Key, _Tp> >::other>::iterator, bool> std::map<_Key, _Tp, _Compare, _Alloc>::insert(value_type&&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::vector<std::shared_ptr<Measurement> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >; typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<std::pair<const _Key, _Tp> >::other>::iterator = std::_Rb_tree<std::__cxx11::basic_string<char>, std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > > >::iterator; typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<std::pair<const _Key, _Tp> >::other = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >; typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<std::pair<const _Key, _Tp> > = __gnu_cxx::__alloc_traits<std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >, std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >::rebind<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >; typename _Alloc::value_type = std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >; value_type = std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >]'
+  842 |       insert(value_type&& __x)
+      |       ^~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:842:7: note:   candidate expects 1 argument, 2 provided
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:880:7: note: candidate: 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(std::initializer_list<std::pair<const _Key, _Tp> >) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::vector<std::shared_ptr<Measurement> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >]'
+  880 |       insert(std::initializer_list<value_type> __list)
+      |       ^~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:880:7: note:   candidate expects 1 argument, 2 provided
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:910:7: note: candidate: 'std::map<_Key, _Tp, _Compare, _Alloc>::iterator std::map<_Key, _Tp, _Compare, _Alloc>::insert(const_iterator, const value_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::vector<std::shared_ptr<Measurement> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >; iterator = std::_Rb_tree<std::__cxx11::basic_string<char>, std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > > >::iterator; const_iterator = std::_Rb_tree<std::__cxx11::basic_string<char>, std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > > >::const_iterator; value_type = std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >]'
+  910 |       insert(const_iterator __position, const value_type& __x)
+      |       ^~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:910:29: note:   no known conversion for argument 1 from 'const std::string' {aka 'const std::__cxx11::basic_string<char>'} to 'std::map<std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >::const_iterator' {aka 'std::_Rb_tree<std::__cxx11::basic_string<char>, std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > > >::const_iterator'}
+  910 |       insert(const_iterator __position, const value_type& __x)
+      |              ~~~~~~~~~~~~~~~^~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:920:7: note: candidate: 'std::map<_Key, _Tp, _Compare, _Alloc>::iterator std::map<_Key, _Tp, _Compare, _Alloc>::insert(const_iterator, value_type&&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::vector<std::shared_ptr<Measurement> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >; iterator = std::_Rb_tree<std::__cxx11::basic_string<char>, std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > > >::iterator; const_iterator = std::_Rb_tree<std::__cxx11::basic_string<char>, std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > > >::const_iterator; value_type = std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >]'
+  920 |       insert(const_iterator __position, value_type&& __x)
+      |       ^~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/stl_map.h:920:29: note:   no known conversion for argument 1 from 'const std::string' {aka 'const std::__cxx11::basic_string<char>'} to 'std::map<std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >::const_iterator' {aka 'std::_Rb_tree<std::__cxx11::basic_string<char>, std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::shared_ptr<Measurement> > > > >::const_iterator'}
+  920 |       insert(const_iterator __position, value_type&& __x)
+      |              ~~~~~~~~~~~~~~~^~~~~~~~~~
+00:09:31 **** Incremental Build of configuration Debug for project Exam-2019WiSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\MeasurementDb.o" "..\\myCode\\MeasurementDb.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Measurement.o" "..\\myCode\\Measurement.cpp" 
+g++ -o Exam-2019WiSe.exe "myCode\\Humidity.o" "myCode\\Measurement.o" "myCode\\MeasurementDb.o" "myCode\\Temperature.o" "myCode\\main.o" 
+00:52:25 **** Incremental Build of configuration Debug for project Exam-2019WiSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\main.o" "..\\myCode\\main.cpp" 
+In file included from ..\myCode\Temperature.h:12,
+                 from ..\myCode\main.cpp:10:
+..\myCode\Measurement.h:22:23: error: 'std::ostream& Measurement::operator<<(std::ostream&, Measurement&)' must have exactly one argument
+   22 |         std::ostream& operator<<(std::ostream& lhs, Measurement& rhs);
+      |                       ^~~~~~~~
+..\myCode\main.cpp: In function 'int main()':
+..\myCode\main.cpp:27:10: error: no match for 'operator<<' (operand types are 'std::ostream' {aka 'std::basic_ostream<char>'} and 'Temperature')
+   27 |     cout << measurement1 << endl;
+      |     ~~~~ ^~ ~~~~~~~~~~~~
+      |     |       |
+      |     |       Temperature
+      |     std::ostream {aka std::basic_ostream<char>}
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/iostream:41,
+                 from ..\myCode\main.cpp:2:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:110:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__ostream_type& (*)(__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  110 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:110:36: note:   no known conversion for argument 1 from 'Temperature' to 'std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)' {aka 'std::basic_ostream<char>& (*)(std::basic_ostream<char>&)'}
+  110 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:119:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__ios_type& (*)(__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; __ios_type = std::basic_ios<char>]'
+  119 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:119:32: note:   no known conversion for argument 1 from 'Temperature' to 'std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'}
+  119 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:129:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  129 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:129:30: note:   no known conversion for argument 1 from 'Temperature' to 'std::ios_base& (*)(std::ios_base&)'
+  129 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:168:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  168 |       operator<<(long __n)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:168:23: note:   no known conversion for argument 1 from 'Temperature' to 'long int'
+  168 |       operator<<(long __n)
+      |                  ~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:172:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  172 |       operator<<(unsigned long __n)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:172:32: note:   no known conversion for argument 1 from 'Temperature' to 'long unsigned int'
+  172 |       operator<<(unsigned long __n)
+      |                  ~~~~~~~~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:176:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  176 |       operator<<(bool __n)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:176:23: note:   no known conversion for argument 1 from 'Temperature' to 'bool'
+  176 |       operator<<(bool __n)
+      |                  ~~~~~^~~
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:880:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:96:5: note: candidate: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]'
+   96 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:97:22: note:   no known conversion for argument 1 from 'Temperature' to 'short int'
+   97 |     operator<<(short __n)
+      |                ~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:183:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  183 |       operator<<(unsigned short __n)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:183:33: note:   no known conversion for argument 1 from 'Temperature' to 'short unsigned int'
+  183 |       operator<<(unsigned short __n)
+      |                  ~~~~~~~~~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:110:5: note: candidate: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]'
+  110 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:111:20: note:   no known conversion for argument 1 from 'Temperature' to 'int'
+  111 |     operator<<(int __n)
+      |                ~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:194:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  194 |       operator<<(unsigned int __n)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:194:31: note:   no known conversion for argument 1 from 'Temperature' to 'unsigned int'
+  194 |       operator<<(unsigned int __n)
+      |                  ~~~~~~~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:203:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  203 |       operator<<(long long __n)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:203:28: note:   no known conversion for argument 1 from 'Temperature' to 'long long int'
+  203 |       operator<<(long long __n)
+      |                  ~~~~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:207:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  207 |       operator<<(unsigned long long __n)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:207:37: note:   no known conversion for argument 1 from 'Temperature' to 'long long unsigned int'
+  207 |       operator<<(unsigned long long __n)
+      |                  ~~~~~~~~~~~~~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:222:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  222 |       operator<<(double __f)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:222:25: note:   no known conversion for argument 1 from 'Temperature' to 'double'
+  222 |       operator<<(double __f)
+      |                  ~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:226:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  226 |       operator<<(float __f)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:226:24: note:   no known conversion for argument 1 from 'Temperature' to 'float'
+  226 |       operator<<(float __f)
+      |                  ~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:234:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  234 |       operator<<(long double __f)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:234:30: note:   no known conversion for argument 1 from 'Temperature' to 'long double'
+  234 |       operator<<(long double __f)
+      |                  ~~~~~~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:292:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  292 |       operator<<(const void* __p)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:292:30: note:   no known conversion for argument 1 from 'Temperature' to 'const void*'
+  292 |       operator<<(const void* __p)
+      |                  ~~~~~~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:124:5: note: candidate: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; __streambuf_type = std::basic_streambuf<char>]'
+  124 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:125:34: note:   no known conversion for argument 1 from 'Temperature' to 'std::basic_ostream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'}
+  125 |     operator<<(__streambuf_type* __sbin)
+      |                ~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/string:54,
+                 from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/locale_classes.h:40,
+                 from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ios_base.h:41,
+                 from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ios:44,
+                 from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:40:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/basic_string.h:4020:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const __cxx11::basic_string<_CharT, _Traits, _Alloc>&)'
+ 4020 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/basic_string.h:4020:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:27:13: note:   'Temperature' is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+   27 |     cout << measurement1 << endl;
+      |             ^~~~~~~~~~~~
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ios_base.h:46:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/system_error:339:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const error_code&)'
+  339 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/system_error:339:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:27:13: note:   cannot convert 'measurement1' (type 'Temperature') to type 'const std::error_code&'
+   27 |     cout << measurement1 << endl;
+      |             ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:554:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, _CharT)'
+  554 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:554:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:27:13: note:   deduced conflicting types for parameter '_CharT' ('char' and 'Temperature')
+   27 |     cout << measurement1 << endl;
+      |             ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:564:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, char)'
+  564 |     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:564:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:27:13: note:   cannot convert 'measurement1' (type 'Temperature') to type 'char'
+   27 |     cout << measurement1 << endl;
+      |             ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:570:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char)'
+  570 |     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:570:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:27:13: note:   cannot convert 'measurement1' (type 'Temperature') to type 'char'
+   27 |     cout << measurement1 << endl;
+      |             ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:581:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, signed char)'
+  581 |     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:581:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:27:13: note:   cannot convert 'measurement1' (type 'Temperature') to type 'signed char'
+   27 |     cout << measurement1 << endl;
+      |             ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:586:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, unsigned char)'
+  586 |     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:586:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:27:13: note:   cannot convert 'measurement1' (type 'Temperature') to type 'unsigned char'
+   27 |     cout << measurement1 << endl;
+      |             ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:645:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const _CharT*)'
+  645 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:645:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:27:13: note:   mismatched types 'const _CharT*' and 'Temperature'
+   27 |     cout << measurement1 << endl;
+      |             ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:307:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const char*)'
+  307 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:307:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:27:13: note:   cannot convert 'measurement1' (type 'Temperature') to type 'const char*'
+   27 |     cout << measurement1 << endl;
+      |             ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:662:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char*)'
+  662 |     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:662:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:27:13: note:   cannot convert 'measurement1' (type 'Temperature') to type 'const char*'
+   27 |     cout << measurement1 << endl;
+      |             ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:675:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const signed char*)'
+  675 |     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:675:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:27:13: note:   cannot convert 'measurement1' (type 'Temperature') to type 'const signed char*'
+   27 |     cout << measurement1 << endl;
+      |             ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:680:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const unsigned char*)'
+  680 |     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:680:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:27:13: note:   cannot convert 'measurement1' (type 'Temperature') to type 'const unsigned char*'
+   27 |     cout << measurement1 << endl;
+      |             ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:801:5: note: candidate: 'template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&)'
+  801 |     operator<<(_Ostream&& __os, const _Tp& __x)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:801:5: note:   template argument deduction/substitution failed:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream: In substitution of 'template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = Temperature]':
+..\myCode\main.cpp:27:13:   required from here
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:801:5: error: no type named 'type' in 'struct std::enable_if<false, void>'
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/memory:80,
+                 from ..\myCode\MeasurementDb.h:14,
+                 from ..\myCode\main.cpp:12:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/shared_ptr.h:70:5: note: candidate: 'template<class _Ch, class _Tr, class _Tp, __gnu_cxx::_Lock_policy _Lp> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const __shared_ptr<_Tp, _Lp>&)'
+   70 |     operator<<(std::basic_ostream<_Ch, _Tr>& __os,
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/shared_ptr.h:70:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:27:13: note:   'Temperature' is not derived from 'const std::__shared_ptr<_Tp, _Lp>'
+   27 |     cout << measurement1 << endl;
+      |             ^~~~~~~~~~~~
+..\myCode\main.cpp:28:10: error: no match for 'operator<<' (operand types are 'std::ostream' {aka 'std::basic_ostream<char>'} and 'Humidity')
+   28 |     cout << measurement2 << endl;
+      |     ~~~~ ^~ ~~~~~~~~~~~~
+      |     |       |
+      |     |       Humidity
+      |     std::ostream {aka std::basic_ostream<char>}
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:110:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__ostream_type& (*)(__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  110 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:110:36: note:   no known conversion for argument 1 from 'Humidity' to 'std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)' {aka 'std::basic_ostream<char>& (*)(std::basic_ostream<char>&)'}
+  110 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:119:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__ios_type& (*)(__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; __ios_type = std::basic_ios<char>]'
+  119 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:119:32: note:   no known conversion for argument 1 from 'Humidity' to 'std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'}
+  119 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:129:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  129 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:129:30: note:   no known conversion for argument 1 from 'Humidity' to 'std::ios_base& (*)(std::ios_base&)'
+  129 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:168:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  168 |       operator<<(long __n)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:168:23: note:   no known conversion for argument 1 from 'Humidity' to 'long int'
+  168 |       operator<<(long __n)
+      |                  ~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:172:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  172 |       operator<<(unsigned long __n)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:172:32: note:   no known conversion for argument 1 from 'Humidity' to 'long unsigned int'
+  172 |       operator<<(unsigned long __n)
+      |                  ~~~~~~~~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:176:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  176 |       operator<<(bool __n)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:176:23: note:   no known conversion for argument 1 from 'Humidity' to 'bool'
+  176 |       operator<<(bool __n)
+      |                  ~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:96:5: note: candidate: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]'
+   96 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:97:22: note:   no known conversion for argument 1 from 'Humidity' to 'short int'
+   97 |     operator<<(short __n)
+      |                ~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:183:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  183 |       operator<<(unsigned short __n)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:183:33: note:   no known conversion for argument 1 from 'Humidity' to 'short unsigned int'
+  183 |       operator<<(unsigned short __n)
+      |                  ~~~~~~~~~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:110:5: note: candidate: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]'
+  110 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:111:20: note:   no known conversion for argument 1 from 'Humidity' to 'int'
+  111 |     operator<<(int __n)
+      |                ~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:194:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  194 |       operator<<(unsigned int __n)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:194:31: note:   no known conversion for argument 1 from 'Humidity' to 'unsigned int'
+  194 |       operator<<(unsigned int __n)
+      |                  ~~~~~~~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:203:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  203 |       operator<<(long long __n)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:203:28: note:   no known conversion for argument 1 from 'Humidity' to 'long long int'
+  203 |       operator<<(long long __n)
+      |                  ~~~~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:207:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  207 |       operator<<(unsigned long long __n)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:207:37: note:   no known conversion for argument 1 from 'Humidity' to 'long long unsigned int'
+  207 |       operator<<(unsigned long long __n)
+      |                  ~~~~~~~~~~~~~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:222:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  222 |       operator<<(double __f)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:222:25: note:   no known conversion for argument 1 from 'Humidity' to 'double'
+  222 |       operator<<(double __f)
+      |                  ~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:226:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  226 |       operator<<(float __f)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:226:24: note:   no known conversion for argument 1 from 'Humidity' to 'float'
+  226 |       operator<<(float __f)
+      |                  ~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:234:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  234 |       operator<<(long double __f)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:234:30: note:   no known conversion for argument 1 from 'Humidity' to 'long double'
+  234 |       operator<<(long double __f)
+      |                  ~~~~~~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:292:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  292 |       operator<<(const void* __p)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:292:30: note:   no known conversion for argument 1 from 'Humidity' to 'const void*'
+  292 |       operator<<(const void* __p)
+      |                  ~~~~~~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:124:5: note: candidate: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; __streambuf_type = std::basic_streambuf<char>]'
+  124 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:125:34: note:   no known conversion for argument 1 from 'Humidity' to 'std::basic_ostream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'}
+  125 |     operator<<(__streambuf_type* __sbin)
+      |                ~~~~~~~~~~~~~~~~~~^~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/basic_string.h:4020:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const __cxx11::basic_string<_CharT, _Traits, _Alloc>&)'
+ 4020 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/basic_string.h:4020:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:28:13: note:   'Humidity' is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+   28 |     cout << measurement2 << endl;
+      |             ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/system_error:339:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const error_code&)'
+  339 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/system_error:339:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:28:13: note:   cannot convert 'measurement2' (type 'Humidity') to type 'const std::error_code&'
+   28 |     cout << measurement2 << endl;
+      |             ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:554:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, _CharT)'
+  554 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:554:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:28:13: note:   deduced conflicting types for parameter '_CharT' ('char' and 'Humidity')
+   28 |     cout << measurement2 << endl;
+      |             ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:564:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, char)'
+  564 |     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:564:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:28:13: note:   cannot convert 'measurement2' (type 'Humidity') to type 'char'
+   28 |     cout << measurement2 << endl;
+      |             ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:570:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char)'
+  570 |     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:570:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:28:13: note:   cannot convert 'measurement2' (type 'Humidity') to type 'char'
+   28 |     cout << measurement2 << endl;
+      |             ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:581:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, signed char)'
+  581 |     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:581:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:28:13: note:   cannot convert 'measurement2' (type 'Humidity') to type 'signed char'
+   28 |     cout << measurement2 << endl;
+      |             ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:586:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, unsigned char)'
+  586 |     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:586:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:28:13: note:   cannot convert 'measurement2' (type 'Humidity') to type 'unsigned char'
+   28 |     cout << measurement2 << endl;
+      |             ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:645:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const _CharT*)'
+  645 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:645:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:28:13: note:   mismatched types 'const _CharT*' and 'Humidity'
+   28 |     cout << measurement2 << endl;
+      |             ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:307:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const char*)'
+  307 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:307:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:28:13: note:   cannot convert 'measurement2' (type 'Humidity') to type 'const char*'
+   28 |     cout << measurement2 << endl;
+      |             ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:662:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char*)'
+  662 |     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:662:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:28:13: note:   cannot convert 'measurement2' (type 'Humidity') to type 'const char*'
+   28 |     cout << measurement2 << endl;
+      |             ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:675:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const signed char*)'
+  675 |     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:675:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:28:13: note:   cannot convert 'measurement2' (type 'Humidity') to type 'const signed char*'
+   28 |     cout << measurement2 << endl;
+      |             ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:680:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const unsigned char*)'
+  680 |     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:680:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:28:13: note:   cannot convert 'measurement2' (type 'Humidity') to type 'const unsigned char*'
+   28 |     cout << measurement2 << endl;
+      |             ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:801:5: note: candidate: 'template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&)'
+  801 |     operator<<(_Ostream&& __os, const _Tp& __x)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:801:5: note:   template argument deduction/substitution failed:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream: In substitution of 'template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = Humidity]':
+..\myCode\main.cpp:28:13:   required from here
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:801:5: error: no type named 'type' in 'struct std::enable_if<false, void>'
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/shared_ptr.h:70:5: note: candidate: 'template<class _Ch, class _Tr, class _Tp, __gnu_cxx::_Lock_policy _Lp> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const __shared_ptr<_Tp, _Lp>&)'
+   70 |     operator<<(std::basic_ostream<_Ch, _Tr>& __os,
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/shared_ptr.h:70:5: note:   template argument deduction/substitution failed:
+..\myCode\main.cpp:28:13: note:   'Humidity' is not derived from 'const std::__shared_ptr<_Tp, _Lp>'
+   28 |     cout << measurement2 << endl;
+      |             ^~~~~~~~~~~~
+00:52:26 **** Incremental Build of configuration Debug for project Exam-2019WiSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\MeasurementDb.o" "..\\myCode\\MeasurementDb.cpp" 
+In file included from ..\myCode\MeasurementDb.h:15,
+                 from ..\myCode\MeasurementDb.cpp:8:
+..\myCode\Measurement.h:22:23: error: 'std::ostream& Measurement::operator<<(std::ostream&, Measurement&)' must have exactly one argument
+   22 |         std::ostream& operator<<(std::ostream& lhs, Measurement& rhs);
+      |                       ^~~~~~~~
+..\myCode\MeasurementDb.cpp: In member function 'void MeasurementDb::print()':
+..\myCode\MeasurementDb.cpp:29:23: error: no match for 'operator<<' (operand types are 'std::ostream' {aka 'std::basic_ostream<char>'} and 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'})
+   29 |             std::cout << *measurement << std::endl;
+      |             ~~~~~~~~~ ^~ ~~~~~~~~~~~~
+      |                  |       |
+      |                  |       std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type {aka Measurement}
+      |                  std::ostream {aka std::basic_ostream<char>}
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/iostream:41,
+                 from ..\myCode\MeasurementDb.h:11:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:110:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__ostream_type& (*)(__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  110 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:110:36: note:   no known conversion for argument 1 from 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'} to 'std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)' {aka 'std::basic_ostream<char>& (*)(std::basic_ostream<char>&)'}
+  110 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:119:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__ios_type& (*)(__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; __ios_type = std::basic_ios<char>]'
+  119 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:119:32: note:   no known conversion for argument 1 from 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'} to 'std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'}
+  119 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:129:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  129 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:129:30: note:   no known conversion for argument 1 from 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'} to 'std::ios_base& (*)(std::ios_base&)'
+  129 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:168:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  168 |       operator<<(long __n)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:168:23: note:   no known conversion for argument 1 from 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'} to 'long int'
+  168 |       operator<<(long __n)
+      |                  ~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:172:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  172 |       operator<<(unsigned long __n)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:172:32: note:   no known conversion for argument 1 from 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'} to 'long unsigned int'
+  172 |       operator<<(unsigned long __n)
+      |                  ~~~~~~~~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:176:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  176 |       operator<<(bool __n)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:176:23: note:   no known conversion for argument 1 from 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'} to 'bool'
+  176 |       operator<<(bool __n)
+      |                  ~~~~~^~~
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:880:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:96:5: note: candidate: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]'
+   96 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:97:22: note:   no known conversion for argument 1 from 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'} to 'short int'
+   97 |     operator<<(short __n)
+      |                ~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:183:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  183 |       operator<<(unsigned short __n)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:183:33: note:   no known conversion for argument 1 from 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'} to 'short unsigned int'
+  183 |       operator<<(unsigned short __n)
+      |                  ~~~~~~~~~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:110:5: note: candidate: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]'
+  110 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:111:20: note:   no known conversion for argument 1 from 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'} to 'int'
+  111 |     operator<<(int __n)
+      |                ~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:194:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  194 |       operator<<(unsigned int __n)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:194:31: note:   no known conversion for argument 1 from 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'} to 'unsigned int'
+  194 |       operator<<(unsigned int __n)
+      |                  ~~~~~~~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:203:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  203 |       operator<<(long long __n)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:203:28: note:   no known conversion for argument 1 from 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'} to 'long long int'
+  203 |       operator<<(long long __n)
+      |                  ~~~~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:207:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  207 |       operator<<(unsigned long long __n)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:207:37: note:   no known conversion for argument 1 from 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'} to 'long long unsigned int'
+  207 |       operator<<(unsigned long long __n)
+      |                  ~~~~~~~~~~~~~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:222:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  222 |       operator<<(double __f)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:222:25: note:   no known conversion for argument 1 from 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'} to 'double'
+  222 |       operator<<(double __f)
+      |                  ~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:226:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  226 |       operator<<(float __f)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:226:24: note:   no known conversion for argument 1 from 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'} to 'float'
+  226 |       operator<<(float __f)
+      |                  ~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:234:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  234 |       operator<<(long double __f)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:234:30: note:   no known conversion for argument 1 from 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'} to 'long double'
+  234 |       operator<<(long double __f)
+      |                  ~~~~~~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:292:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+  292 |       operator<<(const void* __p)
+      |       ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:292:30: note:   no known conversion for argument 1 from 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'} to 'const void*'
+  292 |       operator<<(const void* __p)
+      |                  ~~~~~~~~~~~~^~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:124:5: note: candidate: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; __streambuf_type = std::basic_streambuf<char>]'
+  124 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:125:34: note:   no known conversion for argument 1 from 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'} to 'std::basic_ostream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'}
+  125 |     operator<<(__streambuf_type* __sbin)
+      |                ~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/string:54,
+                 from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/locale_classes.h:40,
+                 from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ios_base.h:41,
+                 from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ios:44,
+                 from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:40:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/basic_string.h:4020:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const __cxx11::basic_string<_CharT, _Traits, _Alloc>&)'
+ 4020 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/basic_string.h:4020:5: note:   template argument deduction/substitution failed:
+..\myCode\MeasurementDb.cpp:29:27: note:   'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'} is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+   29 |             std::cout << *measurement << std::endl;
+      |                           ^~~~~~~~~~~
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ios_base.h:46:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/system_error:339:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const error_code&)'
+  339 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/system_error:339:5: note:   template argument deduction/substitution failed:
+..\myCode\MeasurementDb.cpp:29:26: note:   cannot convert '((const std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>*)(& measurement))->std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::operator*()' (type 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'}) to type 'const std::error_code&'
+   29 |             std::cout << *measurement << std::endl;
+      |                          ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:554:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, _CharT)'
+  554 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:554:5: note:   template argument deduction/substitution failed:
+..\myCode\MeasurementDb.cpp:29:27: note:   deduced conflicting types for parameter '_CharT' ('char' and 'Measurement')
+   29 |             std::cout << *measurement << std::endl;
+      |                           ^~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:564:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, char)'
+  564 |     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:564:5: note:   template argument deduction/substitution failed:
+..\myCode\MeasurementDb.cpp:29:26: note:   cannot convert '((const std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>*)(& measurement))->std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::operator*()' (type 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'}) to type 'char'
+   29 |             std::cout << *measurement << std::endl;
+      |                          ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:570:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char)'
+  570 |     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:570:5: note:   template argument deduction/substitution failed:
+..\myCode\MeasurementDb.cpp:29:26: note:   cannot convert '((const std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>*)(& measurement))->std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::operator*()' (type 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'}) to type 'char'
+   29 |             std::cout << *measurement << std::endl;
+      |                          ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:581:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, signed char)'
+  581 |     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:581:5: note:   template argument deduction/substitution failed:
+..\myCode\MeasurementDb.cpp:29:26: note:   cannot convert '((const std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>*)(& measurement))->std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::operator*()' (type 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'}) to type 'signed char'
+   29 |             std::cout << *measurement << std::endl;
+      |                          ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:586:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, unsigned char)'
+  586 |     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:586:5: note:   template argument deduction/substitution failed:
+..\myCode\MeasurementDb.cpp:29:26: note:   cannot convert '((const std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>*)(& measurement))->std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::operator*()' (type 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'}) to type 'unsigned char'
+   29 |             std::cout << *measurement << std::endl;
+      |                          ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:645:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const _CharT*)'
+  645 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:645:5: note:   template argument deduction/substitution failed:
+..\myCode\MeasurementDb.cpp:29:27: note:   mismatched types 'const _CharT*' and 'Measurement'
+   29 |             std::cout << *measurement << std::endl;
+      |                           ^~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:307:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const char*)'
+  307 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/ostream.tcc:307:5: note:   template argument deduction/substitution failed:
+..\myCode\MeasurementDb.cpp:29:26: note:   cannot convert '((const std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>*)(& measurement))->std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::operator*()' (type 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'}) to type 'const char*'
+   29 |             std::cout << *measurement << std::endl;
+      |                          ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:662:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char*)'
+  662 |     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:662:5: note:   template argument deduction/substitution failed:
+..\myCode\MeasurementDb.cpp:29:26: note:   cannot convert '((const std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>*)(& measurement))->std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::operator*()' (type 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'}) to type 'const char*'
+   29 |             std::cout << *measurement << std::endl;
+      |                          ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:675:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const signed char*)'
+  675 |     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:675:5: note:   template argument deduction/substitution failed:
+..\myCode\MeasurementDb.cpp:29:26: note:   cannot convert '((const std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>*)(& measurement))->std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::operator*()' (type 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'}) to type 'const signed char*'
+   29 |             std::cout << *measurement << std::endl;
+      |                          ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:680:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const unsigned char*)'
+  680 |     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:680:5: note:   template argument deduction/substitution failed:
+..\myCode\MeasurementDb.cpp:29:26: note:   cannot convert '((const std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>*)(& measurement))->std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::operator*()' (type 'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'}) to type 'const unsigned char*'
+   29 |             std::cout << *measurement << std::endl;
+      |                          ^~~~~~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:801:5: note: candidate: 'template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&)'
+  801 |     operator<<(_Ostream&& __os, const _Tp& __x)
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:801:5: note:   template argument deduction/substitution failed:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream: In substitution of 'template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = Measurement]':
+..\myCode\MeasurementDb.cpp:29:27:   required from here
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/ostream:801:5: error: no type named 'type' in 'struct std::enable_if<false, void>'
+In file included from C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/memory:80,
+                 from ..\myCode\MeasurementDb.h:14:
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/shared_ptr.h:70:5: note: candidate: 'template<class _Ch, class _Tr, class _Tp, __gnu_cxx::_Lock_policy _Lp> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const __shared_ptr<_Tp, _Lp>&)'
+   70 |     operator<<(std::basic_ostream<_Ch, _Tr>& __os,
+      |     ^~~~~~~~
+C:/Program Files/GIT/eclipse/mingw/mingw64/include/c++/13.2.0/bits/shared_ptr.h:70:5: note:   template argument deduction/substitution failed:
+..\myCode\MeasurementDb.cpp:29:27: note:   'std::__shared_ptr_access<Measurement, __gnu_cxx::_S_atomic, false, false>::element_type' {aka 'Measurement'} is not derived from 'const std::__shared_ptr<_Tp, _Lp>'
+   29 |             std::cout << *measurement << std::endl;
+      |                           ^~~~~~~~~~~
+00:53:25 **** Incremental Build of configuration Debug for project Exam-2019WiSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\MeasurementDb.o" "..\\myCode\\MeasurementDb.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Temperature.o" "..\\myCode\\Temperature.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\main.o" "..\\myCode\\main.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Measurement.o" "..\\myCode\\Measurement.cpp" 
+..\myCode\Measurement.cpp:46:15: error: 'std::ostream& Measurement::operator<<(std::ostream&, Measurement&)' must have exactly one argument
+   46 | std::ostream& Measurement::operator <<(std::ostream &lhs, Measurement &rhs)
+      |               ^~~~~~~~~~~
+00:53:39 **** Incremental Build of configuration Debug for project Exam-2019WiSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Humidity.o" "..\\myCode\\Humidity.cpp" 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Measurement.o" "..\\myCode\\Measurement.cpp" 
+..\myCode\Measurement.cpp: In function 'std::ostream& operator<<(std::ostream&, Measurement&)':
+..\myCode\Measurement.cpp:48:33: error: 'uint16_t Measurement::timestamp' is private within this context
+   48 |          lhs << toTimeOfDay(rhs.timestamp) << " "<< rhs.toString();
+      |                                 ^~~~~~~~~
+In file included from ..\myCode\Measurement.cpp:8:
+..\myCode\Measurement.h:15:18: note: declared private here
+   15 |         uint16_t timestamp;
+      |                  ^~~~~~~~~
+..\myCode\Measurement.cpp:48:17: error: 'toTimeOfDay' was not declared in this scope
+   48 |          lhs << toTimeOfDay(rhs.timestamp) << " "<< rhs.toString();
+      |                 ^~~~~~~~~~~
+00:53:59 **** Incremental Build of configuration Debug for project Exam-2019WiSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Measurement.o" "..\\myCode\\Measurement.cpp" 
+..\myCode\Measurement.cpp: In function 'std::ostream& operator<<(std::ostream&, Measurement&)':
+..\myCode\Measurement.cpp:48:46: error: 'uint16_t Measurement::timestamp' is private within this context
+   48 |          lhs << Measurement::toTimeOfDay(rhs.timestamp) << " "<< rhs.toString();
+      |                                              ^~~~~~~~~
+In file included from ..\myCode\Measurement.cpp:8:
+..\myCode\Measurement.h:15:18: note: declared private here
+   15 |         uint16_t timestamp;
+      |                  ^~~~~~~~~
+00:54:53 **** Incremental Build of configuration Debug for project Exam-2019WiSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Measurement.o" "..\\myCode\\Measurement.cpp" 
+..\myCode\Measurement.cpp: In function 'std::ostream& operator<<(std::ostream&, const Measurement&)':
+..\myCode\Measurement.cpp:48:41: error: 'uint16_t Measurement::timestamp' is private within this context
+   48 |     lhs << Measurement::toTimeOfDay(rhs.timestamp) << " " << rhs.toString();
+      |                                         ^~~~~~~~~
+In file included from ..\myCode\Measurement.cpp:8:
+..\myCode\Measurement.h:15:18: note: declared private here
+   15 |         uint16_t timestamp;
+      |                  ^~~~~~~~~
+00:56:22 **** Incremental Build of configuration Debug for project Exam-2019WiSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Measurement.o" "..\\myCode\\Measurement.cpp" 
+g++ -o Exam-2019WiSe.exe "myCode\\Humidity.o" "myCode\\Measurement.o" "myCode\\MeasurementDb.o" "myCode\\Temperature.o" "myCode\\main.o" 
+C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: myCode\MeasurementDb.o: in function `MeasurementDb::print()':
+C:\Sandbox\Restart\CodePractice\Exam-2019WiSe\Debug/../myCode/MeasurementDb.cpp:29:(.text+0x15b): undefined reference to `operator<<(std::ostream&, Measurement&)'
+C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: myCode\main.o: in function `main':
+C:\Sandbox\Restart\CodePractice\Exam-2019WiSe\Debug/../myCode/main.cpp:27:(.text+0x157): undefined reference to `operator<<(std::ostream&, Measurement&)'
+C:/Program Files/GIT/eclipse/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Sandbox\Restart\CodePractice\Exam-2019WiSe\Debug/../myCode/main.cpp:28:(.text+0x17f): undefined reference to `operator<<(std::ostream&, Measurement&)'
 collect2.exe: error: ld returned 1 exit status
-19:15:31 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
+00:56:51 **** Incremental Build of configuration Debug for project Exam-2019WiSe ****
 Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-19:15:39 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Measurement.o" "..\\myCode\\Measurement.cpp" 
+g++ -o Exam-2019WiSe.exe "myCode\\Humidity.o" "myCode\\Measurement.o" "myCode\\MeasurementDb.o" "myCode\\Temperature.o" "myCode\\main.o" 
+00:57:35 **** Incremental Build of configuration Debug for project Exam-2019WiSe ****
 Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
-Info: Nothing to build for Exam-2023SoSe
-19:30:18 **** Incremental Build of configuration Debug for project Exam-2023SoSe ****
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Measurement.o" "..\\myCode\\Measurement.cpp" 
+g++ -o Exam-2019WiSe.exe "myCode\\Humidity.o" "myCode\\Measurement.o" "myCode\\MeasurementDb.o" "myCode\\Temperature.o" "myCode\\main.o" 
+Info: Nothing to build for Exam-2019WiSe
+00:58:00 **** Incremental Build of configuration Debug for project Exam-2019WiSe ****
 Info: Internal Builder is used for build
-g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -o "myCode\\tests.o" "..\\myCode\\tests.cpp" 
-g++ -o Exam-2023SoSe "myCode\\Adjuster.o" "myCode\\DuplicateSensorName.o" "myCode\\LinearAdjuster.o" "myCode\\NullAdjuster.o" "myCode\\Sensor.o" "myCode\\SensorNetwork.o" "myCode\\TableBasedAdjuster.o" "myCode\\TestSensor.o" "myCode\\main.o" "myCode\\tests.o" -lPocoData -lPocoJSON -lPocoFoundation 
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Measurement.o" "..\\myCode\\Measurement.cpp" 
+g++ -o Exam-2019WiSe.exe "myCode\\Humidity.o" "myCode\\Measurement.o" "myCode\\MeasurementDb.o" "myCode\\Temperature.o" "myCode\\main.o" 
+00:59:15 **** Incremental Build of configuration Debug for project Exam-2019WiSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\main.o" "..\\myCode\\main.cpp" 
+g++ -o Exam-2019WiSe.exe "myCode\\Humidity.o" "myCode\\Measurement.o" "myCode\\MeasurementDb.o" "myCode\\Temperature.o" "myCode\\main.o" 
+01:02:12 **** Incremental Build of configuration Debug for project Exam-2019WiSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\Measurement.o" "..\\myCode\\Measurement.cpp" 
+g++ -o Exam-2019WiSe.exe "myCode\\Humidity.o" "myCode\\Measurement.o" "myCode\\MeasurementDb.o" "myCode\\Temperature.o" "myCode\\main.o" 
+01:03:11 **** Incremental Build of configuration Debug for project Exam-2019WiSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\main.o" "..\\myCode\\main.cpp" 
+g++ -o Exam-2019WiSe.exe "myCode\\Humidity.o" "myCode\\Measurement.o" "myCode\\MeasurementDb.o" "myCode\\Temperature.o" "myCode\\main.o" 
+01:04:30 **** Incremental Build of configuration Debug for project Exam-2019WiSe ****
+Info: Internal Builder is used for build
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -Wall -Werror=return-type -o "myCode\\MeasurementDb.o" "..\\myCode\\MeasurementDb.cpp" 
+g++ -o Exam-2019WiSe.exe "myCode\\Humidity.o" "myCode\\Measurement.o" "myCode\\MeasurementDb.o" "myCode\\Temperature.o" "myCode\\main.o" 
